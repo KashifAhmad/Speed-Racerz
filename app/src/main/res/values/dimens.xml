@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_left_login_social">5sp</dimen>
+    <dimen name="login_social_layout_height">60sp</dimen>
+    <dimen name="padding_social_registration">8sp</dimen>
+    <dimen name="login_line_heigth">1sp</dimen>
+    <dimen name="round_layout_height">100sp</dimen>
+    <dimen name="edittext_field_height">60dp</dimen>
+    <dimen name="margin_top_edittext_field_layout">15sp</dimen>
+    <dimen name="margin_top_login_tv_register">10sp</dimen>
+    <dimen name="login_register_text_size">22sp</dimen>
+</resources>

@@ -5,5 +5,12 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="cursor_color">#000000</color>
+    <color name="cursor_gray_color">#000000</color>
     <color name="login_text_color">#D2BC93</color>
+
+    <color name="round_racer_color">#F5F5F5</color>
+    <color name="round_register_button_color">#000000</color>
+    <color name="button_text_color">#ffffff</color>
+    <color name="socil_registration">#ffffff</color>
+    <color name="login_view_ling_color">#979696</color>
 </resources>
