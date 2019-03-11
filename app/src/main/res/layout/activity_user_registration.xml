@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@mipmap/img_bg2"
-    tools:context=".RegistrationActivity">
-
+    tools:context=".UserRegistrationActivity">
 
     <ImageView
         android:id="@+id/iv_register_logo"
@@ -155,13 +154,13 @@
                         android:layout_width="0sp"
                         android:layout_height="@dimen/round_layout_height"
                         android:layout_weight="1"
-                        android:background="@drawable/round_corner_gray">
+                        android:background="@drawable/round_corner_selected">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:src="@mipmap/user_unselected" />
+                            android:src="@mipmap/user_selected" />
 
 
                         <TextView
@@ -172,6 +171,7 @@
                             android:gravity="center_horizontal"
                             android:scaleX="1.5"
                             android:text="USER"
+                            android:textColor="@color/reg_seleted_text_color"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
@@ -210,15 +210,91 @@
                 </LinearLayout>
 
 
-                <Button
-                    android:id="@+id/btn_login_register"
+                <LinearLayout
+                    android:id="@+id/ll_conutry_city"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_user_and_racer"
+                    android:layout_below="@id/ll_user_and_racer"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginTop="@dimen/margin_top_edittext_field_layout"
+                    android:layout_marginRight="10sp"
+                    android:orientation="vertical"
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Countrt"
+                        android:theme="@style/TextLabel"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_field_height"
+                            android:inputType="text"
+                            android:textColor="@color/cursor_color"
+                            android:textColorHint="@color/cursor_color"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            app:backgroundTint="@color/cursor_color" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:theme="@style/TextLabel"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_field_height"
+                            android:inputType="text"
+                            android:textColor="@color/cursor_color"
+                            android:textColorHint="@color/cursor_color"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            app:backgroundTint="@color/cursor_color" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Company"
+                        android:theme="@style/TextLabel"
+                        app:hintAnimationEnabled="true"
+                        app:hintEnabled="true">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edittext_field_height"
+                            android:inputType="text"
+                            android:textColor="@color/cursor_color"
+                            android:textColorHint="@color/cursor_color"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            app:backgroundTint="@color/cursor_color" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_user_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_conutry_city"
                     android:layout_alignParentRight="true"
-                    android:layout_marginLeft="160sp"
+                    android:layout_marginLeft="80sp"
                     android:layout_marginTop="20sp"
-                    android:layout_marginRight="20sp"
+                    android:layout_marginRight="80sp"
                     android:background="@drawable/round_register_bg"
                     android:text="REGISTER"
                     android:textColor="@color/button_text_color"
@@ -229,7 +305,7 @@
                     android:id="@+id/tv_already_member_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/btn_login_register"
+                    android:layout_below="@+id/btn_user_register"
                     android:layout_marginTop="20sp"
                     android:layout_marginBottom="20sp"
                     android:gravity="center_horizontal"

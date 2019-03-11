@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/notification_bg"
+    tools:context=".NotificationAccessActivity">
+
+    <ImageView
+        android:id="@+id/iv_location_access_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:src="@mipmap/logo" />
+
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/notification" />
+
+
+    <TextView
+        android:id="@+id/tv_location_access_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_location_access_logo"
+        android:layout_marginLeft="40sp"
+        android:text="Notification Access"
+        android:textColor="@color/location_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_location_access"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_location_access_title"
+        android:layout_marginLeft="40sp"
+        android:text="Lorem ipsum dolor sit amet,consectertur \nadipiscing elit,sed do eiusmod tempor."
+        android:textColor="@color/location_text_color"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_racer_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_maybe_later"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80sp"
+        android:layout_marginBottom="20sp"
+        android:background="@drawable/round_brown_bg"
+        android:text="Allow"
+        android:textColor="@color/button_text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_maybe_later"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:text="Maybe Later"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/notification_bg"
+    tools:context=".AllDoneWelcomeActivity">
+
+    <ImageView
+        android:id="@+id/iv_location_access_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:src="@mipmap/logo" />
+
+
+    <ImageView
+        android:id="@+id/iv_all_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/all_set" />
+
+    <TextView
+        android:id="@+id/tv_location_access_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_all_set"
+        android:layout_centerHorizontal="true"
+        android:text="All Clear!"
+        android:textColor="@color/location_text_color"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_all_done_welcome_to_speedracerz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_location_access_title"
+        android:layout_centerHorizontal="true"
+        android:text="All done, welcome to speedracerz"
+        android:textColor="@color/location_text_color"
+        android:textSize="14sp" />
+
+
+    <Button
+        android:id="@+id/btn_racer_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="80sp"
+        android:layout_marginBottom="40sp"
+        android:background="@drawable/round_brown_bg"
+        android:text="Done"
+        android:textColor="@color/button_text_color"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

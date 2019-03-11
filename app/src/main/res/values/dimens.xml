@@ -9,4 +9,5 @@
     <dimen name="margin_top_edittext_field_layout">15sp</dimen>
     <dimen name="margin_top_login_tv_register">10sp</dimen>
     <dimen name="login_register_text_size">22sp</dimen>
+    <dimen name="login_choice_text_size">18sp</dimen>
 </resources>
