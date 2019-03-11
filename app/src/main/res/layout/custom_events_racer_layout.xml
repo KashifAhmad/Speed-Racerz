@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130sp">
+
+
+    <ImageView
+        android:id="@+id/iv_custom_racers"
+        android:layout_width="90sp"
+        android:layout_height="100sp"
+        android:layout_marginLeft="20sp"
+        android:background="@drawable/round_corner_image_view"
+        android:paddingTop="10sp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/profile"/>
+
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_custom_racers"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp"
+        android:text="Sean Harmon"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_custom_racers"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10sp"
+        android:text="Drag Racer"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35sp"
+        android:paddingTop="15sp"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@color/view_line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"/>
+
+
+</RelativeLayout>

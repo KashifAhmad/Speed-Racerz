@@ -204,27 +204,27 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@mipmap/facebook_unseleted_icon" />
+                        android:src="@mipmap/facebook_dark_icon" />
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/margin_left_login_social"
-                        android:src="@mipmap/google_unselected_icon" />
+                        android:src="@mipmap/google_dark_icon" />
 
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/margin_left_login_social"
-                        android:src="@mipmap/twitter_unselected_icon" />
+                        android:src="@mipmap/twitter_dark_icon" />
 
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/margin_left_login_social"
-                        android:src="@mipmap/instagram_unseleted_icon" />
+                        android:src="@mipmap/instagram_dark_icon" />
 
 
                 </LinearLayout>
