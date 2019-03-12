@@ -11,7 +11,8 @@ import android.view.LayoutInflater;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
-import com.techease.speedracerz.R;
+
+import com.techease.speed.R;
 
 
 /**

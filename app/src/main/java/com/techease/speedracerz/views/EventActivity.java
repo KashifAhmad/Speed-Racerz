@@ -1,7 +1,9 @@
-package com.techease.speedracerz;
+package com.techease.speedracerz.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.techease.speed.R;
 
 public class EventActivity extends AppCompatActivity {
 

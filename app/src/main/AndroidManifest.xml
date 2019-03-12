@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ReviewActivity"></activity>
-        <activity android:name=".PaymentActivity" />
+        <activity android:name="com.techease.speedracerz.views.ReviewActivity"></activity>
+        <activity android:name="com.techease.speedracerz.views.PaymentActivity" />
         <activity android:name=".BookingActivity" />
         <activity android:name=".MyTicketsActivity" />
         <activity android:name=".ProfileActivity" />
@@ -25,7 +25,7 @@
         <activity android:name=".UserRegistrationActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.techease.speedracerz.views.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

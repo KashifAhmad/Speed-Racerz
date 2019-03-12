@@ -1,13 +1,18 @@
-package com.techease.speedracerz;
+package com.techease.speedracerz.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class LogInChoiceActivity extends AppCompatActivity {
+import com.techease.speed.R;
+
+
+public class BookingActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in_choise);
+        setContentView(R.layout.activity_booking);
+
+
     }
 }

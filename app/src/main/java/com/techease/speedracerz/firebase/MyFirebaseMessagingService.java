@@ -11,8 +11,8 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.techease.speedracerz.MainActivity;
-import com.techease.speedracerz.R;
+import com.techease.speed.R;
+import com.techease.speedracerz.views.MainActivity;
 
 /**
  * Created by Asus on 10/12/2017.

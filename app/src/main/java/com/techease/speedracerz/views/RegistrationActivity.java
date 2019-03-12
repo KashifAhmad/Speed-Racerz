@@ -1,10 +1,12 @@
-package com.techease.speedracerz;
+package com.techease.speedracerz.views;
 
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.techease.speed.R;
 
 public class RegistrationActivity extends AppCompatActivity {
 
