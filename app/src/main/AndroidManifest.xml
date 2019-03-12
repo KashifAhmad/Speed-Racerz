@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MyTicketsActivity"></activity>
+        <activity android:name=".BookingActivity"></activity>
+        <activity android:name=".MyTicketsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".AboutEventsActivity" />
         <activity android:name=".BookEventsActivity" />
