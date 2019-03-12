@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".BookingActivity">
+    tools:context=".PaymentActivity">
+
+
+
 
 
     <ImageView
@@ -105,7 +107,9 @@
             android:layout_centerHorizontal="true"
             android:gravity="center"
             android:text="Payment"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
 
         <TextView
@@ -119,7 +123,7 @@
 
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_booking_events"
+            android:id="@+id/rv_payment_events"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tv_booking">
@@ -141,6 +145,5 @@
         android:text="CONTINUE"
         android:textColor="@color/white"
         android:textStyle="bold" />
-
 
 </RelativeLayout>
