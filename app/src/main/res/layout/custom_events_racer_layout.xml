@@ -13,7 +13,7 @@
         android:paddingTop="10sp"
         android:layout_centerVertical="true"
         android:scaleType="fitXY"
-        android:src="@mipmap/profile"/>
+        android:src="@mipmap/img_bg2"/>
 
 
 
