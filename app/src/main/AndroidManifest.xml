@@ -9,20 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-<<<<<<< HEAD
-        <activity android:name="com.techease.speedracerz.BookEventsActivity"></activity>
-        <activity android:name="com.techease.speedracerz.EventActivity" />
-        <activity android:name="com.techease.speedracerz.AllDoneWelcomeActivity" />
-        <activity android:name="com.techease.speedracerz.NotificationAccessActivity" />
-        <activity android:name="com.techease.speedracerz.LocationAccessActivity" />
-        <activity android:name="com.techease.speedracerz.LogInChoiceActivity" />
-        <activity android:name="com.techease.speedracerz.RacerRegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.UserRegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.LoginActivity" />
-        <activity android:name="com.techease.speedracerz.RegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.MainActivity">
-=======
-        <activity android:name=".BookingActivity"></activity>
+
+        <activity android:name=".BookingActivity" />
         <activity android:name=".MyTicketsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".AboutEventsActivity" />
@@ -37,7 +25,7 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegistrationActivity" />
         <activity android:name=".MainActivity">
->>>>>>> origin/atta
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

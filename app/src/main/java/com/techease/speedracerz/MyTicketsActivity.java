@@ -1,13 +1,13 @@
-package com.techease.speed;
+package com.techease.speedracerz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ProfileActivity extends AppCompatActivity {
+public class MyTicketsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_my_tickets);
     }
 }

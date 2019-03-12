@@ -1,10 +1,9 @@
 package com.techease.speedracerz;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-import com.techease.speed.BookingActivity;
 import com.techease.speedracerz.firebase.MyJobService;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         startService(new Intent(this, MyJobService.class));
 
         startActivity(new Intent(this, BookingActivity.class));
+        finish();
     }
 }

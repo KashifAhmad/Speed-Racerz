@@ -1,15 +1,14 @@
-package com.techease.speed;
+package com.techease.speedracerz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class BookingActivity extends AppCompatActivity {
+public class AboutEventsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_booking);
-
+        setContentView(R.layout.activity_about_events);
 
     }
 }
