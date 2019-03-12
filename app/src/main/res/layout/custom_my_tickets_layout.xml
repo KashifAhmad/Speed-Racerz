@@ -14,7 +14,6 @@
         android:src="@mipmap/instagram_gray_icon"/>
 
 
-
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
@@ -40,12 +39,25 @@
 
 
     <TextView
+        android:id="@+id/tv_booked_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/iv_my_tickets"
         android:layout_below="@+id/tv_drag_race"
         android:layout_marginLeft="10sp"
-        android:text="Booked: John Smith"
+        android:text="Booked:"
+        android:textSize="16sp"
+        android:textColor="@color/black"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_booked_title"
+        android:layout_below="@+id/tv_drag_race"
+        android:layout_marginLeft="5sp"
+        android:text="John Smith"
         android:textSize="16sp"
         android:textColor="@color/black"/>
 
@@ -86,15 +98,28 @@
 
 
     <TextView
+        android:id="@+id/tv_qty_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/iv_event"
-        android:text="Qty 2"
+        android:text="Qty"
         android:textStyle="bold"
         android:layout_marginBottom="20sp"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:layout_marginLeft="40sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_event"
+        android:layout_toRightOf="@+id/tv_qty_title"
+        android:text="2"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10sp"/>
 
 
 </RelativeLayout>

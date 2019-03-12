@@ -24,4 +24,5 @@
 
 
     <color name="profile_button_text_color">#666363</color>
+    <color name="booking_event_edit_color">#CECEC8</color>
 </resources>
