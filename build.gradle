@@ -12,7 +12,7 @@ buildscript {
 
 
         // NOTE: Do not place your application dependencies here; they belong
-        // instagram_unseleted_icon the individual module build.gradle files
+        // instagram_dark_icon the individual module build.gradle files
     }
 }
 
