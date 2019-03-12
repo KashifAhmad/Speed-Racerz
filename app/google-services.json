@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "311890109131",
+    "firebase_url": "https://speedracerz-6fdb5.firebaseio.com",
+    "project_id": "speedracerz-6fdb5",
+    "storage_bucket": "speedracerz-6fdb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311890109131:android:77a0aecbd0c92862",
+        "android_client_info": {
+          "package_name": "com.techease.speedracerz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311890109131-qrvsen703e1fdm4vq3i3cj6gmbmb2ppt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techease.speedracerz",
+            "certificate_hash": "bad6ded29eb256fb2620cf306f283b0491a022df"
+          }
+        },
+        {
+          "client_id": "311890109131-7idqcbkbtt8f0hi64a7pqcm9dfpp58bt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6867e6m-y7ppL5tuEHZHUjzictcTCtO0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311890109131-7idqcbkbtt8f0hi64a7pqcm9dfpp58bt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

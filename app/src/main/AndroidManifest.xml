@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.techease.speed">
+    package="com.techease.speedracerz">
 
     <application
         android:allowBackup="true"
@@ -9,23 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BookEventsActivity"></activity>
-        <activity android:name=".EventActivity" />
-        <activity android:name=".AllDoneWelcomeActivity" />
-        <activity android:name=".NotificationAccessActivity" />
-        <activity android:name=".LocationAccessActivity" />
-        <activity android:name=".LogInChoiceActivity" />
-        <activity android:name=".RacerRegistrationActivity" />
-        <activity android:name=".UserRegistrationActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.techease.speedracerz.BookEventsActivity"></activity>
+        <activity android:name="com.techease.speedracerz.EventActivity" />
+        <activity android:name="com.techease.speedracerz.AllDoneWelcomeActivity" />
+        <activity android:name="com.techease.speedracerz.NotificationAccessActivity" />
+        <activity android:name="com.techease.speedracerz.LocationAccessActivity" />
+        <activity android:name="com.techease.speedracerz.LogInChoiceActivity" />
+        <activity android:name="com.techease.speedracerz.RacerRegistrationActivity" />
+        <activity android:name="com.techease.speedracerz.UserRegistrationActivity" />
+        <activity android:name="com.techease.speedracerz.LoginActivity" />
+        <activity android:name="com.techease.speedracerz.RegistrationActivity" />
+        <activity android:name="com.techease.speedracerz.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".firebase.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebase.MyJobService" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/menu" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/app_name" />
     </application>
 
 </manifest>
