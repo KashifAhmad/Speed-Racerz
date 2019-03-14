@@ -12,7 +12,7 @@ import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 import com.techease.speed.R;
-import com.techease.speedracerz.views.MainActivity;
+import com.techease.speedracerz.views.NotificationAccessActivity;
 
 /**
  * Created by Asus on 10/12/2017.
@@ -33,7 +33,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
         Log.d("msg", "onMessageReceived: " + remoteMessage.getData().get("message"));
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, NotificationAccessActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
         String channelId = "Default";

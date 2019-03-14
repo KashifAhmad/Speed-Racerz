@@ -1,64 +1,79 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_events"
     android:layout_width="match_parent"
-    android:layout_height="250sp"
-    android:background="@mipmap/car_img3">
+    android:layout_height="250sp">
 
 
-    <LinearLayout
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="90sp"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Drag race"
-            android:textColor="@color/white" />
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        card_view:cardCornerRadius="4dp">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Splits wheels"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@mipmap/car_img3">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5sp"
-            android:text="Lorem ipsum dolor sit amet,consectertur \nadipiscing elit,sed do eiusmod tempor."
-            android:textColor="@color/white" />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="90sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Drag race"
+                    android:textColor="@color/white" />
 
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Splits wheels"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
 
-
-    <ImageView
-        android:id="@+id/iv_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="20sp"
-        android:layout_marginBottom="20sp"
-        android:src="@mipmap/event_icon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="Lorem ipsum dolor sit amet,consectertur \nadipiscing elit,sed do eiusmod tempor."
+                    android:textColor="@color/white" />
+            </LinearLayout>
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20sp"
-        android:layout_marginLeft="10sp"
-        android:gravity="center_vertical"
-        android:layout_toRightOf="@id/iv_event"
-        android:text="November 11 | 11:00 AM"
-        android:textColor="@color/white"
-        android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/iv_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20sp"
+                android:layout_marginBottom="20sp"
+                android:src="@mipmap/event_icon" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_toRightOf="@id/iv_event"
+                android:gravity="center_vertical"
+                android:text="November 11 | 11:00 AM"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 </RelativeLayout>

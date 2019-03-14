@@ -4,21 +4,21 @@
     <item
         android:id="@+id/navigation_shape"
         android:icon="@mipmap/shape"
-        android:title="Songs"/>
+        android:title="Shape"/>
 
     <item
         android:id="@+id/navigation_events"
         android:icon="@mipmap/event_icon"
-        android:title="Albums"/>
+        android:title="Events"/>
 
     <item
         android:id="@+id/navigation_group"
         android:icon="@mipmap/group"
-        android:title="Artists"/>
+        android:title="Group"/>
 
     <item
-        android:id="@+id/navigation_artists"
+        android:id="@+id/navigation_profile"
         android:icon="@mipmap/profile"
-        android:title="Artists"/>
+        android:title="Profile"/>
 
 </menu>

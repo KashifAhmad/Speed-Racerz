@@ -5,18 +5,33 @@
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
+        <item name="colorAccent">@color/hint_text_color</item>
 
-
-    <style name="TextLabel" parent="TextAppearance.AppCompat">
-        <!-- Hint color and label color in FALSE state -->
+        <!-- reference our hint & error styles -->
+      <!--  <item name="hintTextAppearance">@style/HintText</item>
+        <item name="errorTextAppearance">@style/ErrorText</item>
+        <item name="android:textColor">@color/hint_text_color</item>
         <item name="android:textColorHint">@color/hint_text_color</item>
-        <item name="android:textSize">16sp</item>
-        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
-        <!--<item name="colorAccent">@color/colorAccent</item>-->
-        <!--<item name="colorControlNormal">@color/colorPrimary</item>-->
+        <item name="colorControlNormal">@color/hint_text_color</item>
         <item name="colorControlActivated">@color/hint_text_color</item>
+        <item name="colorControlHighlight">@color/hint_text_color</item>-->
     </style>
 
+
+    <style name="NewTextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+
+
+    </style>
+
+
+    <style name="ErrorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/hint_text_color</item>
+        <item name="android:textSize">12sp</item>
+    </style>
 </resources>

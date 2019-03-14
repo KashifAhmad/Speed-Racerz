@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".BookingActivity">
+    android:background="@color/white">
 
 
     <ImageView
@@ -131,6 +130,7 @@
 
 
     <Button
+        android:id="@+id/btn_continue_booking_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_tabs"

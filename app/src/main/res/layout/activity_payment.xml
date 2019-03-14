@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.techease.speedracerz.views.PaymentActivity">
+    tools:context="com.techease.speedracerz.views.PaymentEventsActivity">
 
 
 
@@ -135,6 +135,7 @@
 
 
     <Button
+        android:id="@+id/btn_continue_payment_events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/rl_tabs"

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/img_bg2"
-    tools:context=".RegistrationActivity">
+    android:background="@mipmap/img_bg2">
 
 
     <ImageView
@@ -66,14 +65,16 @@
 
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_registration_username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Username"
-                        android:theme="@style/TextLabel"
-                        app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        style="@style/TextAppearance.AppCompat"
+                        app:errorEnabled="true"
+                        app:hintAnimationEnabled="true">
 
                         <EditText
+                            android:id="@+id/et_registration_username"
                             android:layout_width="match_parent"
                             android:layout_height="@dimen/edittext_field_height"
                             android:inputType="text"
@@ -86,18 +87,18 @@
 
 
                     <android.support.design.widget.TextInputLayout
-                        android:id="@+id/tip_id_number"
+                        android:id="@+id/til_registration_email"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/edittext_field_height"
+                        android:layout_height="wrap_content"
                         android:hint="Email"
-                        android:theme="@style/TextLabel"
-                        app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        style="@style/TextAppearance.AppCompat"
+                        app:errorEnabled="true"
+                        app:hintAnimationEnabled="true">
 
                         <EditText
-                            android:id="@+id/et_email_address"
+                            android:id="@+id/et_registration__email_address"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/edittext_field_height"
                             android:inputType="textEmailAddress"
                             android:textColor="@color/cursor_color"
                             android:textColorHint="@color/cursor_color"
@@ -108,16 +109,18 @@
 
 
                     <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_registration_password"
                         android:layout_width="match_parent"
-                        android:layout_height="@dimen/edittext_field_height"
+                        android:layout_height="wrap_content"
                         android:hint="Password"
-                        android:theme="@style/TextLabel"
-                        app:hintAnimationEnabled="true"
-                        app:hintEnabled="true">
+                        style="@style/TextAppearance.AppCompat"
+                        app:errorEnabled="true"
+                        app:hintAnimationEnabled="true">
 
                         <EditText
+                            android:id="@+id/et_registration_password"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="@dimen/edittext_field_height"
                             android:inputType="textPassword"
                             android:textColor="@color/cursor_color"
                             android:textColorHint="@color/cursor_color"
@@ -211,7 +214,7 @@
 
 
                 <Button
-                    android:id="@+id/btn_login_register"
+                    android:id="@+id/btn_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/ll_user_and_racer"
@@ -229,7 +232,7 @@
                     android:id="@+id/tv_already_member_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/btn_login_register"
+                    android:layout_below="@+id/btn_register"
                     android:layout_marginTop="20sp"
                     android:layout_marginBottom="20sp"
                     android:gravity="center_horizontal"

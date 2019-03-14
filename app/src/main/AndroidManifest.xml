@@ -9,29 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.techease.speedracerz.views.ReviewActivity"></activity>
-        <activity android:name="com.techease.speedracerz.views.PaymentActivity" />
-        <activity android:name=".BookingActivity" />
-        <activity android:name=".MyTicketsActivity" />
-        <activity android:name=".ProfileActivity" />
-        <activity android:name=".AboutEventsActivity" />
-        <activity android:name=".BookEventsActivity" />
-        <activity android:name=".EventActivity" />
-        <activity android:name=".AllDoneWelcomeActivity" />
-        <activity android:name=".NotificationAccessActivity" />
-        <activity android:name=".LocationAccessActivity" />
-        <activity android:name=".LogInChoiceActivity" />
-        <activity android:name=".RacerRegistrationActivity" />
-        <activity android:name=".UserRegistrationActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.views.MainActivity">
+        <activity android:name="com.techease.speedracerz.views.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.techease.speedracerz.views.ReviewEventsActivity" />
+        <activity android:name="com.techease.speedracerz.views.PaymentEventsActivity" />
+        <activity android:name="com.techease.speedracerz.views.BookingEventsActivity" />
+        <activity android:name="com.techease.speedracerz.views.MyTicketsActivity" />
+        <activity android:name="com.techease.speedracerz.views.ProfileActivity" />
+        <activity android:name="com.techease.speedracerz.views.AboutEventsActivity" />
+        <activity android:name="com.techease.speedracerz.views.EventActivity" />
+        <activity android:name="com.techease.speedracerz.views.AllDoneWelcomeActivity" />
+        <activity android:name="com.techease.speedracerz.views.NotificationAccessActivity" />
+        <activity android:name="com.techease.speedracerz.views.LocationAccessActivity" />
+        <activity android:name="com.techease.speedracerz.views.LogInChoiceActivity" />
+        <activity android:name="com.techease.speedracerz.views.RacerRegistrationActivity" />
+        <activity android:name="com.techease.speedracerz.views.UserRegistrationActivity" />
+        <activity android:name="com.techease.speedracerz.views.LoginActivity" />
+        <activity android:name="com.techease.speedracerz.views.RegistrationActivity" />
     </application>
 
 </manifest>

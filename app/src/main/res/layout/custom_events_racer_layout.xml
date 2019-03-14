@@ -3,61 +3,75 @@
     android:layout_width="match_parent"
     android:layout_height="130sp">
 
-
-    <ImageView
-        android:id="@+id/iv_custom_racers"
-        android:layout_width="90sp"
-        android:layout_height="100sp"
-        android:layout_marginLeft="20sp"
-        android:background="@drawable/round_corner_image_view"
-        android:paddingTop="10sp"
-        android:layout_centerVertical="true"
-        android:scaleType="fitXY"
-        android:src="@mipmap/img_bg2"/>
-
-
-
-    <TextView
-        android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/iv_custom_racers"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="10sp"
-        android:text="Sean Harmon"
-        android:textSize="18sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@+id/iv_custom_racers"
-        android:layout_below="@+id/tv_title"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="10sp"
-        android:text="Drag Racer"
-        android:textSize="16sp"
-        android:textColor="@color/black"/>
-
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/right_arrow"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="35sp"
-        android:paddingTop="15sp"/>
-
-
-    <View
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
-        android:layout_height="1sp"
-        android:background="@color/view_line_color"
-        android:layout_alignParentBottom="true"
-        android:layout_marginLeft="40sp"
-        android:layout_marginRight="40sp"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5sp"
+        card_view:cardCornerRadius="4dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130sp">
+
+            <ImageView
+                android:id="@+id/iv_custom_racers"
+                android:layout_width="90sp"
+                android:layout_height="100sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20sp"
+                android:background="@drawable/round_corner_image_view"
+                android:paddingTop="10sp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/img_bg2" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/iv_custom_racers"
+                android:text="Sean Harmon"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10sp"
+                android:layout_toRightOf="@+id/iv_custom_racers"
+                android:text="Drag Racer"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="35sp"
+                android:paddingTop="15sp"
+                android:src="@drawable/right_arrow" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="40sp"
+                android:layout_marginRight="40sp"
+                android:background="@color/view_line_color" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
 
 </RelativeLayout>

@@ -3,7 +3,7 @@
 
 
 
-    <solid android:color="@color/round_racer_color"></solid>
+    <solid android:color="@color/round_gry_color"></solid>
     <corners
         android:bottomLeftRadius="0dp"
         android:bottomRightRadius="8dp"

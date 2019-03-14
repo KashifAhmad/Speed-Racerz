@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/img_bg2"
-    tools:context=".LogInChoiceActivity">
+    android:background="@mipmap/img_bg2">
 
 
     <ScrollView
@@ -33,6 +32,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_registration_choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/iv_choice_logo"
@@ -45,6 +45,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_login_choice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/iv_choice_logo"

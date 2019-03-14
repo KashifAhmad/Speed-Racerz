@@ -10,4 +10,5 @@
     <dimen name="margin_top_login_tv_register">10sp</dimen>
     <dimen name="login_register_text_size">22sp</dimen>
     <dimen name="login_choice_text_size">18sp</dimen>
+    <dimen name="profile_textview_text_size">16sp</dimen>
 </resources>
