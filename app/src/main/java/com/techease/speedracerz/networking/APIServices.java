@@ -1,6 +1,9 @@
 package com.techease.speedracerz.networking;
 
 
+import com.techease.speedracerz.dataModels.changePasswordModels.ChangePasswordModel;
+import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
+import com.techease.speedracerz.dataModels.changePasswordModels.verifycodemodel.VerifyCodeResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;
 
@@ -15,10 +18,6 @@ import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
-
-/**
- * Created by kashif on 4/2/18.
- */
 
 public interface APIServices {
 
@@ -41,7 +40,23 @@ public interface APIServices {
     @POST("login")
     Call<LoginResponse> userLogin(@Field("email") String email,
                                   @Field("password") String password,
+                                  @Field("latitute") String latitude,
+                                  @Field("longitude") String longitude,
                                   @Field("deviceToken") String token);
+
+    @FormUrlEncoded
+    @POST("reset-password")
+    Call<ResetPasswordResponeModel> resetPassword(@Field("email") String email);
+
+    @FormUrlEncoded
+    @POST("reset-password-verify")
+    Call<VerifyCodeResponseModel> verifyPasswordCode(@Field("code") String code,
+                                                     @Field("email") String email);
+
+    @FormUrlEncoded
+    @POST("change-password")
+    Call<ChangePasswordModel> changePassword(@Field("newPassword") String code,
+                                             @Field("confirmPassword") String email);
 
 
 }

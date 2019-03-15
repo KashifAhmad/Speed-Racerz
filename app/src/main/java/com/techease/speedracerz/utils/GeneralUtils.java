@@ -1,11 +1,13 @@
 package com.techease.speedracerz.utils;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Fragment;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.widget.Button;
@@ -13,47 +15,64 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import com.techease.speed.R;
+import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
+import com.techease.speedracerz.views.resetpasswordscreens.ResetPasswordActivity;
+import com.techease.speedracerz.views.resetpasswordscreens.VerifyPasswordCodeActivity;
 
-
-/**
- * Created by kashif on 1/10/18.
- */
+import retrofit2.Callback;
 
 public class GeneralUtils {
-    public static Button button;
-    public static TextView textView;
-    public static GridView gridView;
+
     public static SharedPreferences sharedPreferences;
     public static SharedPreferences.Editor editor;
-    public static String deviceToken;
-    public static String SERVER_MSG = "Server not responding";
-    public static String CONNECTION_MSG = "No internet connection";
-    public static String WRONG_MSG = "Something went wrong!";
-    public static String SUCCESS = "Success";
-    public static AlertDialog progressPie;
 
-    public static Fragment connectFragment(Context context, Fragment fragment) {
-        ((AppCompatActivity) context).getFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack("true").commit();
-        return fragment;
+    public static SharedPreferences.Editor putStringValueInEditor(Context context, String key, String value) {
+        sharedPreferences = getSharedPreferences(context);
+        editor = sharedPreferences.edit();
+        editor.putString(key, value).commit();
+        return editor;
     }
 
-    public static Fragment connectFragmentWithOutBackStack(Context context, Fragment fragment) {
-        ((AppCompatActivity) context).getFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
-        return fragment;
+    public static SharedPreferences.Editor putIntegerValueInEditor(Context context, String key, int value) {
+        sharedPreferences = getSharedPreferences(context);
+        editor = sharedPreferences.edit();
+        editor.putInt(key, value).commit();
+        return editor;
     }
 
-    @SuppressLint("ResourceAsColor")
-    public static AlertDialog acProgressPieDialog(Context context) {
-        AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(context);
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-//        View dialogView = inflater.inflate(R.layout.custom_progress_dialog_layout, null);
-//        dialogBuilder.setView(dialogView);
-//        dialogView.setBackgroundColor(R.color.transparent_white);
-        progressPie = dialogBuilder.create();
-        progressPie.setCancelable(false);
-        progressPie.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-        progressPie.show();
-        return progressPie;
+    public static SharedPreferences.Editor putBooleanValueInEditor(Context context, String key, boolean value) {
+        sharedPreferences = getSharedPreferences(context);
+        editor = sharedPreferences.edit();
+        editor.putBoolean(key, value).commit();
+        return editor;
+    }
+
+
+
+    public static SharedPreferences getSharedPreferences(Context context) {
+        return context.getSharedPreferences(Configuation.MY_PREF, 0);
+    }
+
+    public static boolean isLogin(Context context){
+        return getSharedPreferences(context).getBoolean("isLogin",false);
+    }
+
+
+    public static String getApiToken(Context context){
+        return getSharedPreferences(context).getString("api_token","");
+    }
+
+
+    public static String getForgotEmail(Context context){
+        return getSharedPreferences(context).getString("forgot_email","");
+    }
+
+    public static String getLatitude(Context context){
+        return getSharedPreferences(context).getString("latitude","");
+    }
+
+    public static String getLongitude(Context context){
+        return getSharedPreferences(context).getString("longitude","");
     }
 
 }
