@@ -18,6 +18,12 @@
             android:layout_height="250sp"
             android:background="@mipmap/car_img3">
 
+            <ImageView
+                android:id="@+id/iv_event"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"/>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -34,6 +40,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_event_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Splits wheels"
@@ -43,6 +50,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_event_description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5sp"
@@ -52,7 +60,6 @@
 
 
             <ImageView
-                android:id="@+id/iv_event"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"

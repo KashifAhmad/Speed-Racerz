@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.techease.speed.R;
+import com.techease.speedracerz.utils.GeneralUtils;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -14,13 +15,17 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-
                 finish();
-                startActivity(new Intent(SplashScreenActivity.this, LogInChoiceActivity.class));
+                if(GeneralUtils.isLogin(SplashScreenActivity.this)){
+                    startActivity(new Intent(SplashScreenActivity.this, EventActivity.class));
+                }
+                else {
+                    startActivity(new Intent(SplashScreenActivity.this, LogInChoiceActivity.class));
+                }
+
             }
         }, 1000);
 

@@ -4,7 +4,9 @@ package com.techease.speedracerz.networking;
 import com.techease.speedracerz.dataModels.changePasswordModels.ChangePasswordModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.verifycodemodel.VerifyCodeResponseModel;
+import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
+import com.techease.speedracerz.dataModels.profileDataModel.ProfileResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;
 
 import okhttp3.MultipartBody;
@@ -57,6 +59,12 @@ public interface APIServices {
     @POST("change-password")
     Call<ChangePasswordModel> changePassword(@Field("newPassword") String code,
                                              @Field("confirmPassword") String email);
+
+    @GET("user-profile")
+    Call<ProfileResponseModel> profile();
+
+    @GET("events")
+    Call<EventResponseModel> events();
 
 
 }

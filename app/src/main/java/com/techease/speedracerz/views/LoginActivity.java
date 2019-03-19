@@ -170,7 +170,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     strToken = response.body().getData().getUser().getToken();
                     GeneralUtils.putBooleanValueInEditor(LoginActivity.this, "isLogin", true);
                     GeneralUtils.putStringValueInEditor(LoginActivity.this, "api_token", strToken);
-                    startActivity(new Intent(LoginActivity.this, AllDoneWelcomeActivity.class));
+                    startActivity(new Intent(LoginActivity.this, EventActivity.class));
                 }
             }
 
