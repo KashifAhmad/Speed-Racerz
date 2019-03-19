@@ -8,9 +8,10 @@ import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.dataModels.profileDataModel.ProfileResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;
+import com.techease.speedracerz.dataModels.signupModels.cities.CitiesResponseModel;
+import com.techease.speedracerz.dataModels.signupModels.country.CountryResponseModel;
 
 import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -18,25 +19,32 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
-import retrofit2.http.Part;
+import retrofit2.http.Field;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface APIServices {
 
-    @Multipart
+    @GET("countries")
+    Call<CountryResponseModel> getCountries();
+
+    @GET("cities")
+    Call<CitiesResponseModel> getCities(@Query("countryId") int id);
+
+    @FormUrlEncoded
     @POST("register")
-    Call<SignupResponseModel> userSignUp(@Part("name") RequestBody name,
-                                         @Part("email") RequestBody email,
-                                         @Part("password") RequestBody password,
-                                         @Part("confirmPassword") RequestBody passwordConfirmation,
-                                         @Part("address") RequestBody address,
-                                         @Part("phoneNumber") RequestBody phoneNumber,
-                                         @Part("latitute") RequestBody lat,
-                                         @Part("longitude") RequestBody lon,
-                                         @Part("deviceType") RequestBody deviceType,
-                                         @Part("deviceToken") RequestBody deviceToken,
-                                         @Part MultipartBody.Part photo,
-                                         @Part("profilePicture") RequestBody fileName);
+    Call<SignupResponseModel> userSignUp(@Field("name") String name,
+                                         @Field("email") String email,
+                                         @Field("password") String password,
+                                         @Field("type") String type,
+                                         @Field("category") String category,
+                                         @Field("country") String country,
+                                         @Field("city") String city,
+                                         @Field("company") String company,
+                                         @Field("latitute") String lat,
+                                         @Field("longitude") String lon,
+                                         @Field("deviceType") String deviceType,
+                                         @Field("deviceToken") String deviceToken);
 
     @FormUrlEncoded
     @POST("login")

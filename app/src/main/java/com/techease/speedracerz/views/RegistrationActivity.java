@@ -76,10 +76,7 @@ public class RegistrationActivity extends AppCompatActivity implements View.OnCl
 
 
             case R.id.btn_register:
-
                 if (validate()) {
-
-
                     if (strIAm == null) {
                         Toast.makeText(this, "racer or user not selected", Toast.LENGTH_SHORT).show();
                     } else if (strIAm.equals("user")) {

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/img_bg2"
-    tools:context=".RacerRegistrationActivity">
+    android:background="@mipmap/img_bg2">
 
 
     <ImageView
@@ -67,10 +66,10 @@
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_username"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Username"
-                        style="@style/TextAppearance.AppCompat"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 
@@ -89,10 +88,10 @@
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_email"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Email"
-                        style="@style/TextAppearance.AppCompat"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 
@@ -111,10 +110,10 @@
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_password"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Password"
-                        style="@style/TextAppearance.AppCompat"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 
@@ -129,7 +128,6 @@
                             app:backgroundTint="@color/cursor_color" />
 
                     </android.support.design.widget.TextInputLayout>
-
 
 
                     <TextView
@@ -190,15 +188,14 @@
                         android:layout_marginLeft="20sp"
                         android:layout_toRightOf="@id/rl_user"
                         android:layout_weight="1"
-                        android:background="@drawable/round_corner_selected"
-                        android:backgroundTint="@color/brown_text_color">
+                        android:background="@drawable/round_corner_gray">
 
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerInParent="true"
-                            android:src="@mipmap/racer_seleted" />
+                            android:src="@mipmap/racer_unseleted" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -208,14 +205,12 @@
                             android:gravity="center_horizontal"
                             android:scaleX="1.5"
                             android:text="RACER"
-                            android:textColor="@color/reg_seleted_text_color"
                             android:textSize="16sp"
                             android:textStyle="bold" />
 
                     </RelativeLayout>
 
                 </LinearLayout>
-
 
                 <LinearLayout
                     android:id="@+id/ll_conutry_city"
@@ -229,13 +224,24 @@
                     android:paddingLeft="20sp"
                     android:paddingRight="20sp">
 
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="20dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_country"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Country"
-                        style="@style/TextAppearance.AppCompat"
+                        android:visibility="gone"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 
@@ -251,13 +257,17 @@
 
                     </android.support.design.widget.TextInputLayout>
 
+                    <Spinner
+                        android:id="@+id/city_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_city"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="City"
-                        style="@style/TextAppearance.AppCompat"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 
@@ -276,10 +286,10 @@
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_racer_company"
+                        style="@style/TextAppearance.AppCompat"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Company"
-                        style="@style/TextAppearance.AppCompat"
                         app:errorEnabled="true"
                         app:hintAnimationEnabled="true">
 

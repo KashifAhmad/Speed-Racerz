@@ -38,7 +38,7 @@ public class LogInChoiceActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.tv_registration_choice:
 
-                startActivity(new Intent(this, RegistrationActivity.class));
+                startActivity(new Intent(this, RacerRegistrationActivity.class));
                 break;
 
         }
