@@ -32,7 +32,7 @@ public class AllDoneWelcomeActivity extends AppCompatActivity implements View.On
 
         switch (v.getId()) {
             case R.id.btn_all_clear_done:
-                startActivity(new Intent(this, EventActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
                 break;
         }
 

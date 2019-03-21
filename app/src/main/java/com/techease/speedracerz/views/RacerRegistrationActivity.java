@@ -1,10 +1,13 @@
 package com.techease.speedracerz.views;
 
+import android.Manifest;
 import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,22 +16,32 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.techease.speed.R;
 import com.techease.speedracerz.adapters.CityAdapter;
 import com.techease.speedracerz.adapters.CountryAdapter;
+import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesDataModel;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryDataModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryResponseModel;
 import com.techease.speedracerz.interfaces.OnCountryItemClicked;
 import com.techease.speedracerz.networking.BaseNetworking;
+import com.techease.speedracerz.utils.Connectivity;
+import com.techease.speedracerz.utils.GPSTracker;
+import com.techease.speedracerz.utils.SharedPrefUtils;
 
-import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.nlopez.smartlocation.OnLocationUpdatedListener;
+import io.nlopez.smartlocation.SmartLocation;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -69,12 +82,19 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
     EditText etCity;
     @BindView(R.id.til_racer_city)
     TextInputLayout tillCity;
+
     @BindView(R.id.et_racer_company)
     EditText etCompany;
     @BindView(R.id.til_racer_company)
     TextInputLayout tillCompany;
+
+    @BindView(R.id.et_address)
+    EditText etAddress;
+    @BindView(R.id.til_address)
+    TextInputLayout tilAddress;
+
     @BindView(R.id.spinner)
-    Spinner spinner;
+    Spinner countrySpinner;
     @BindView(R.id.category_spinner)
     Spinner categorySpinner;
     @BindView(R.id.city_spinner)
@@ -87,7 +107,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
     List<CountryDataModel> countryList;
     List<CitiesDataModel> cityList;
     CityAdapter cityAdapter;
-    private String strUsername, strEmail, strPassword, userType, strCountry, strCity, strCompany;
+    private String strUsername, strEmail, strPassword, userType = "", address, strCountry, strCity, strCompany, category, lat, lon;
 
 
     @Override
@@ -97,7 +117,6 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 
 
         initUI();
-        initCountrySpinner();
     }
 
     private void initUI() {
@@ -109,7 +128,50 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         citySpinner.setAdapter(cityAdapter);
         btnRacerRegister.setOnClickListener(this);
         tvAlreadyMemberLogin.setOnClickListener(this);
+        initCountrySpinner();
+
+        checkPermissions();
+        getCoordinates();
+
+
     }
+
+    private void getCoordinates() {
+        SmartLocation.with(this).location()
+                .start(new OnLocationUpdatedListener() {
+                    @Override
+                    public void onLocationUpdated(Location location) {
+                        lat = String.valueOf(location.getLatitude());
+                        lon = String.valueOf(location.getLongitude());
+
+                    }
+                });
+
+            GPSTracker gpsTracker = new GPSTracker(this);
+            lat = String.valueOf(gpsTracker.getLatitude());
+            lon = String.valueOf(gpsTracker.getLongitude());
+
+    }
+
+    private void checkPermissions() {
+        Dexter.withActivity(this)
+                .withPermissions(
+                        Manifest.permission.INTERNET,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                ).withListener(new MultiplePermissionsListener() {
+            @Override
+            public void onPermissionsChecked(MultiplePermissionsReport report) {
+
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+
+            }
+        }).check();
+    }
+
 
     private void initCountrySpinner() {
 
@@ -122,8 +184,22 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         categorySpinner.setAdapter(adapter);
+        categorySpinner.setSelection(0);
+        category = categorySpinner.getSelectedItem().toString();
+        countrySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                countryAdapter.getItem(position);
+                strCountry = countryList.get(position).getName();
+            }
 
-//        spinner.setOnItemSelectedListener(this);
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+//        countrySpinner.setOnItemSelectedListener(this);
     }
 
     private void getCountries() {
@@ -133,8 +209,9 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
             public void onResponse(Call<CountryResponseModel> call, Response<CountryResponseModel> response) {
                 if (response.isSuccessful()) {
                     countryList.addAll(response.body().getData());
-                    spinner.setAdapter(countryAdapter);
+                    countrySpinner.setAdapter(countryAdapter);
                     countryAdapter.notifyDataSetChanged();
+
                 }
             }
 
@@ -143,6 +220,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 
             }
         });
+
     }
 
 
@@ -150,13 +228,13 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_racer_register:
-
-                if (validate()) {
-
-                    startActivity(new Intent(this, LocationAccessActivity.class));
-
+                if (Connectivity.isConnected(this)) {
+                    if (validate()) {
+                        makeUserRegistered();
+                    }
+                } else {
+                    Toast.makeText(this, "No internet connection", Toast.LENGTH_SHORT).show();
                 }
-
                 break;
 
             case R.id.tv_already_member_login:
@@ -181,17 +259,37 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         }
     }
 
+    private void makeUserRegistered() {
+        Call<SignupResponseModel> userRegistrationCall = BaseNetworking.apiServices().userSignUp(strUsername, strEmail, strPassword, userType, category, strCountry, strCity, address, strCompany, lat, lon, "Android", SharedPrefUtils.getDeviceToken(RacerRegistrationActivity.this));
+        userRegistrationCall.enqueue(new Callback<SignupResponseModel>() {
+            @Override
+            public void onResponse(Call<SignupResponseModel> call, Response<SignupResponseModel> response) {
+                if (response.isSuccessful()) {
+                    startActivity(new Intent(RacerRegistrationActivity.this, LocationAccessActivity.class));
+                } else {
+                    Toast.makeText(RacerRegistrationActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<SignupResponseModel> call, Throwable t) {
+
+            }
+        });
+    }
+
     private boolean validate() {
         boolean valid = true;
 
         strUsername = etUsername.getText().toString();
         strEmail = etEmailAddress.getText().toString();
         strPassword = etPassword.getText().toString();
-        strCountry = etCountry.getText().toString();
+//        strCountry = etCountry.getText().toString();
         strCity = etCity.getText().toString();
         strCompany = etCompany.getText().toString();
         strCity = etCity.getText().toString();
         strCompany = etCompany.getText().toString();
+        address = etAddress.getText().toString();
 
 
         if (strUsername.isEmpty() || strUsername.length() < 3) {
@@ -213,11 +311,21 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         } else {
             tilPassword.setError(null);
         }
+        if (userType.equals("")){
+            Toast.makeText(this, "Please select a user type", Toast.LENGTH_SHORT).show();
+            valid = false;
+        }
         if (strCity.isEmpty() || strCity.length() < 3) {
             tillCity.setError("enter a city");
             valid = false;
         } else {
             tillCity.setError(null);
+        }
+        if (address.isEmpty() || address.length() < 3) {
+            tilAddress.setError("enter valid address");
+            valid = false;
+        } else {
+            tilAddress.setError(null);
         }
         if (strCompany.isEmpty() || strCompany.length() < 3) {
             tillCompany.setError("enter country");
@@ -236,7 +344,8 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 //       getCities(id);
 
     }
-    private void getCities(int id){
+
+    private void getCities(int id) {
         Call<CitiesResponseModel> call = BaseNetworking.apiServices().getCities(id);
         call.enqueue(new Callback<CitiesResponseModel>() {
             @Override

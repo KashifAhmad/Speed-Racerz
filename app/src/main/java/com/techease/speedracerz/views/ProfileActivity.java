@@ -1,20 +1,20 @@
 package com.techease.speedracerz.views;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.techease.speed.R;
-import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.dataModels.profileDataModel.ProfileResponseModel;
 import com.techease.speedracerz.networking.APIClient;
 import com.techease.speedracerz.networking.APIServices;
@@ -29,7 +29,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class ProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.iv_profile)
     ImageView ivProfile;
     @BindView(R.id.tv_name)
@@ -40,23 +40,46 @@ public class ProfileActivity extends AppCompatActivity {
     ImageView ivEditProfile;
     @BindView(R.id.navigationView)
     BottomNavigationView bottomNavigationView;
+    @BindView(R.id.btn_logout)
+    Button btnLogout;
 
     AlertDialog alertDialog;
+    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
+            = new BottomNavigationView.OnNavigationItemSelectedListener() {
+
+        @Override
+        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            switch (item.getItemId()) {
+                case R.id.navigation_shape:
+                    return true;
+                case R.id.navigation_events:
+                    startActivity(new Intent(ProfileActivity.this, EventActivity.class));
+                    return true;
+                case R.id.navigation_group:
+                    return true;
+                case R.id.navigation_profile:
+                    startActivity(new Intent(ProfileActivity.this, ProfileActivity.class));
+                    return true;
+            }
+            return false;
+        }
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        ButterKnife.bind(this);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         initUI();
 
     }
 
     private void initUI() {
+        ButterKnife.bind(this);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
         alertDialog = AlertUtils.createProgressDialog(this);
         alertDialog.show();
+        btnLogout.setOnClickListener(this);
         apiCallProfile();
 
         ivEditProfile.setOnClickListener(new View.OnClickListener() {
@@ -97,25 +120,13 @@ public class ProfileActivity extends AppCompatActivity {
         });
     }
 
-
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_shape:
-                    return true;
-                case R.id.navigation_events:
-                    startActivity(new Intent(ProfileActivity.this, EventActivity.class));
-                    return true;
-                case R.id.navigation_group:
-                    return true;
-                case R.id.navigation_profile:
-                    startActivity(new Intent(ProfileActivity.this, ProfileActivity.class));
-                    return true;
-            }
-            return false;
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_logout:
+                GeneralUtils.putBooleanValueInEditor(ProfileActivity.this, "isLogin", false);
+                startActivity(new Intent(ProfileActivity.this, SplashScreenActivity.class));
+                finishAffinity();
         }
-    };
+    }
 }

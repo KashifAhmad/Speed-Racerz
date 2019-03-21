@@ -21,8 +21,10 @@ import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.networking.APIClient;
 import com.techease.speedracerz.networking.APIServices;
+import com.techease.speedracerz.networking.BaseNetworking;
 import com.techease.speedracerz.utils.AlertUtils;
 import com.techease.speedracerz.utils.GeneralUtils;
+import com.techease.speedracerz.utils.SharedPrefUtils;
 
 import org.json.JSONObject;
 
@@ -49,13 +51,15 @@ public class EventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
-        ButterKnife.bind(this);
-        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
         initUI();
 
     }
 
     private void initUI() {
+        ButterKnife.bind(this);
+        bottomNavigationView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        bottomNavigationView.setSelectedItemId(R.id.navigation_events);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvEvents.setLayoutManager(linearLayoutManager);
         eventDataModelArrayList = new ArrayList<>();
@@ -67,8 +71,7 @@ public class EventActivity extends AppCompatActivity {
     }
 
     private void apiCallEvents() {
-        APIServices services = APIClient.getClient(GeneralUtils.getApiToken(this)).create(APIServices.class);
-        Call<EventResponseModel> userLogin = services.events();
+        Call<EventResponseModel> userLogin = BaseNetworking.apiServices(SharedPrefUtils.getApiToken(EventActivity.this)).events();
         userLogin.enqueue(new Callback<EventResponseModel>() {
             @Override
             public void onResponse(Call<EventResponseModel> call, Response<EventResponseModel> response) {
@@ -108,8 +111,7 @@ public class EventActivity extends AppCompatActivity {
 
                     return true;
                 case R.id.navigation_events:
-                    startActivity(new Intent(EventActivity.this, EventActivity.class));
-
+//                    startActivity(new Intent(EventActivity.this, EventActivity.class));
 
                     return true;
                 case R.id.navigation_group:

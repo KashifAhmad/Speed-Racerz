@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/events_bg_color">
@@ -19,8 +17,18 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="290sp"
-                android:background="@mipmap/car_img3">
+                android:layout_height="290sp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <ImageView
+                        android:id="@+id/iv_event_image"
+                        android:scaleType="fitXY"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@mipmap/car_img1"/>
+                </FrameLayout>
 
 
                 <LinearLayout
@@ -32,6 +40,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/tv_event_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Drag race"
@@ -39,6 +48,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_event_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Splits wheels"
@@ -48,6 +58,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_event_description"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5sp"
@@ -67,6 +78,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_event_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/ll_drag_race"
@@ -93,7 +105,7 @@
 
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/tv_user_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -103,9 +115,10 @@
                     android:textSize="18sp" />
 
                 <TextView
+                    android:id="@+id/tv_location"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/title"
+                    android:layout_below="@id/tv_user_name"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="10sp"
                     android:drawableLeft="@drawable/navigation"
@@ -199,6 +212,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit_sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua_ut_enim_ad_minim_veniam_quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat" />
@@ -224,6 +238,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_racers" />
+
             <TextView
                 android:id="@+id/tv_people_comming"
                 android:layout_width="match_parent"
@@ -239,14 +254,11 @@
                 android:textStyle="bold" />
 
 
-
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/rv_people_comming"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_people_comming" />
-
-
 
 
         </RelativeLayout>

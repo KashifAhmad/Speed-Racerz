@@ -1,11 +1,12 @@
 package com.techease.speedracerz.views;
 
+import android.Manifest;
 import android.content.Intent;
+import android.location.Location;
+import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,18 +14,29 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 import com.techease.speed.R;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.networking.APIClient;
 import com.techease.speedracerz.networking.APIServices;
 import com.techease.speedracerz.utils.AlertUtils;
+import com.techease.speedracerz.utils.GPSTracker;
 import com.techease.speedracerz.utils.GeneralUtils;
+import com.techease.speedracerz.utils.SharedPrefUtils;
 import com.techease.speedracerz.views.resetpasswordscreens.ResetPasswordActivity;
 
 import org.json.JSONObject;
 
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.nlopez.smartlocation.OnLocationUpdatedListener;
+import io.nlopez.smartlocation.SmartLocation;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -58,17 +70,22 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     ImageView ivLoginInstagrarm;
 
     AlertDialog alertDialog;
-    String strLoginUsername, strLoginPassword,strToken;
+    String strLoginUsername, strLoginPassword, strToken, lat, lon;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        initUI();
+    }
+
+    private void initUI() {
         ButterKnife.bind(this);
-
         buttonClickListener();
-
+        checkPermissions();
+        getCoordinates();
 
     }
 
@@ -151,9 +168,45 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     }
 
+    private void getCoordinates() {
+        SmartLocation.with(this).location()
+                .start(new OnLocationUpdatedListener() {
+                    @Override
+                    public void onLocationUpdated(Location location) {
+                        lat = String.valueOf(location.getLatitude());
+                        lon = String.valueOf(location.getLongitude());
+
+                    }
+                });
+
+        GPSTracker gpsTracker = new GPSTracker(this);
+        lat = String.valueOf(gpsTracker.getLatitude());
+        lon = String.valueOf(gpsTracker.getLongitude());
+
+    }
+
+    private void checkPermissions() {
+        Dexter.withActivity(this)
+                .withPermissions(
+                        Manifest.permission.INTERNET,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION
+                ).withListener(new MultiplePermissionsListener() {
+            @Override
+            public void onPermissionsChecked(MultiplePermissionsReport report) {
+
+            }
+
+            @Override
+            public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+
+            }
+        }).check();
+    }
+
     private void apiCallLogin() {
         APIServices services = APIClient.getClient().create(APIServices.class);
-        Call<LoginResponse> userLogin = services.userLogin(strLoginUsername, strLoginPassword, "5434.45", "5434.478", "3d5d943946b39461fffd2a99e2b0d7734ec137cecae2f1d3153c3c2d9bf2231a");
+        Call<LoginResponse> userLogin = services.userLogin(strLoginUsername, strLoginPassword, lat, lon, SharedPrefUtils.getDeviceToken(this));
         userLogin.enqueue(new Callback<LoginResponse>() {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
@@ -170,7 +223,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     strToken = response.body().getData().getUser().getToken();
                     GeneralUtils.putBooleanValueInEditor(LoginActivity.this, "isLogin", true);
                     GeneralUtils.putStringValueInEditor(LoginActivity.this, "api_token", strToken);
-                    startActivity(new Intent(LoginActivity.this, EventActivity.class));
+                    SharedPrefUtils.getEditor(LoginActivity.this).putString("name", response.body().getData().getUser().getName()).commit();
+                    SharedPrefUtils.getEditor(LoginActivity.this).putString("auth_token", strToken).commit();
+                    Intent intent = new Intent(LoginActivity.this, EventActivity.class);
+//                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                    startActivity(intent);
+                    finishAffinity();
                 }
             }
 

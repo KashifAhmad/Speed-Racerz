@@ -4,6 +4,7 @@ package com.techease.speedracerz.networking;
 import com.techease.speedracerz.dataModels.changePasswordModels.ChangePasswordModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.verifycodemodel.VerifyCodeResponseModel;
+import com.techease.speedracerz.dataModels.eventDetailModels.EventDetailsResponseModel;
 import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.dataModels.profileDataModel.ProfileResponseModel;
@@ -40,6 +41,7 @@ public interface APIServices {
                                          @Field("category") String category,
                                          @Field("country") String country,
                                          @Field("city") String city,
+                                         @Field("address") String address,
                                          @Field("company") String company,
                                          @Field("latitute") String lat,
                                          @Field("longitude") String lon,
@@ -73,6 +75,9 @@ public interface APIServices {
 
     @GET("events")
     Call<EventResponseModel> events();
+
+    @GET("get-event-detail")
+    Call<EventDetailsResponseModel> getEventDetails(@Query("eventId") int id);
 
 
 }
