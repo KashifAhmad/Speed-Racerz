@@ -30,7 +30,7 @@
         <activity android:name="com.techease.speedracerz.views.BookingEventsActivity" />
         <activity android:name="com.techease.speedracerz.views.MyTicketsActivity" />
         <activity android:name="com.techease.speedracerz.views.AboutEventsActivity" />
-        <activity android:name="com.techease.speedracerz.views.EventActivity" />
+        <activity android:name="com.techease.speedracerz.views.BottomNavActivity" />
         <activity android:name="com.techease.speedracerz.views.AllDoneWelcomeActivity" />
         <activity android:name="com.techease.speedracerz.views.NotificationAccessActivity" />
         <activity android:name="com.techease.speedracerz.views.LocationAccessActivity" />

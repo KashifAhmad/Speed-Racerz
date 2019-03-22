@@ -2,7 +2,6 @@ package com.techease.speedracerz.views.fragments;
 
 
 import android.os.Bundle;
-import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
@@ -19,7 +18,6 @@ import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.networking.BaseNetworking;
 import com.techease.speedracerz.utils.AlertUtils;
 import com.techease.speedracerz.utils.SharedPrefUtils;
-import com.techease.speedracerz.views.EventActivity;
 
 import org.json.JSONObject;
 

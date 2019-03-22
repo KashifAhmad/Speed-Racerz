@@ -22,7 +22,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
 //                startActivity(new Intent(SplashScreenActivity.this, LogInChoiceActivity.class));
                 if(GeneralUtils.isLogin(SplashScreenActivity.this)){
-                    startActivity(new Intent(SplashScreenActivity.this, EventActivity.class));
+                    startActivity(new Intent(SplashScreenActivity.this, BottomNavActivity.class));
                     finish();
                 }
                 else {
