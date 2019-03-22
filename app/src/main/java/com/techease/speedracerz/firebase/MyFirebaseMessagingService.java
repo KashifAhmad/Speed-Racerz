@@ -11,7 +11,7 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.views.NotificationAccessActivity;
 
 /**

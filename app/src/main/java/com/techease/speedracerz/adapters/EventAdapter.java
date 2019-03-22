@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.eventsDataModels.EventDataModel;
 import com.techease.speedracerz.utils.SharedPrefUtils;
 import com.techease.speedracerz.views.AboutEventsActivity;

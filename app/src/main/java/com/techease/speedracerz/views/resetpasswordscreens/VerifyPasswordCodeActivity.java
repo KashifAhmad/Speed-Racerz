@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.changePasswordModels.ChangePasswordModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.verifycodemodel.VerifyCodeResponseModel;
 import com.techease.speedracerz.networking.APIClient;

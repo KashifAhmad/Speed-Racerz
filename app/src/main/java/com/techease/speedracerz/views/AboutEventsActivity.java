@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.eventDetailModels.EventDetailsResponseModel;
 import com.techease.speedracerz.networking.BaseNetworking;
 import com.techease.speedracerz.utils.GeneralUtils;

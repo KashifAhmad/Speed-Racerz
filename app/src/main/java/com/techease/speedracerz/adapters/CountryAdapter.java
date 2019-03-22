@@ -9,7 +9,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
+
 import com.techease.speedracerz.dataModels.signupModels.country.CountryDataModel;
 import com.techease.speedracerz.interfaces.OnCountryItemClicked;
 

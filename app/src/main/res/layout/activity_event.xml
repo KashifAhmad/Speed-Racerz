@@ -3,98 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/bottom_container"
     android:layout_height="match_parent"
     android:background="@mipmap/notification_bg">
 
 
-
-   <android.support.v7.widget.RecyclerView
-       android:id="@+id/rv_event"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:layout_marginBottom="60dp"
-       >
-
-   </android.support.v7.widget.RecyclerView>
-
-<RelativeLayout
-    android:id="@+id/empty_layout"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="gone"
-    >
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingLeft="20sp"
-        android:paddingRight="20sp"
-        android:layout_marginTop="10sp">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:text="Events"/>
-
-
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/iv_menu"
-            android:layout_marginRight="20sp"
-            android:src="@mipmap/search"/>
-
-        <ImageView
-            android:id="@+id/iv_menu"
-            android:layout_width="30sp"
-            android:layout_height="30sp"
-            android:layout_centerVertical="true"
-            android:src="@drawable/menu"
-            android:layout_alignParentRight="true"/>
-
-
-    </RelativeLayout>
-
-
-
-    <ImageView
-        android:id="@+id/iv_event"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/no_event"
-        android:layout_centerInParent="true"/>
-
-
-
-
-    <TextView
-        android:id="@+id/tv_location_access_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/iv_event"
-        android:layout_centerHorizontal="true"
-        android:text="No Event Available!"
-        android:textColor="@color/location_text_color"
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/tv_all_done_welcome_to_speedracerz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tv_location_access_title"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:text="We found no event occuring at\nyour current place."
-        android:textColor="@color/location_text_color"
-        android:textSize="14sp" />
-</RelativeLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigationView"

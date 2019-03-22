@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ProgressBar;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 
 
 public class AlertUtils {

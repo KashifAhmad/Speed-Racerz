@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.techease.speed">
+    package="com.techease.speedracerz">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
     <uses-feature android:name="android.hardware.location.gps" />
 
     <application
@@ -15,7 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.techease.speedracerz.views.resetpasswordscreens.VerifyPasswordCodeActivity"></activity>
+        <activity android:name="com.techease.speedracerz.views.resetpasswordscreens.VerifyPasswordCodeActivity" />
         <activity android:name="com.techease.speedracerz.views.resetpasswordscreens.ResetPasswordActivity" />
         <activity android:name="com.techease.speedracerz.views.SplashScreenActivity">
             <intent-filter>
@@ -28,7 +29,6 @@
         <activity android:name="com.techease.speedracerz.views.PaymentEventsActivity" />
         <activity android:name="com.techease.speedracerz.views.BookingEventsActivity" />
         <activity android:name="com.techease.speedracerz.views.MyTicketsActivity" />
-        <activity android:name="com.techease.speedracerz.views.ProfileActivity" />
         <activity android:name="com.techease.speedracerz.views.AboutEventsActivity" />
         <activity android:name="com.techease.speedracerz.views.EventActivity" />
         <activity android:name="com.techease.speedracerz.views.AllDoneWelcomeActivity" />

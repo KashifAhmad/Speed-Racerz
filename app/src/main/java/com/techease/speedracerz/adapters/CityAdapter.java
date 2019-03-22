@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesDataModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryDataModel;
 

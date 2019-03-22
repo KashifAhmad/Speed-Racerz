@@ -21,7 +21,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.adapters.CityAdapter;
 import com.techease.speedracerz.adapters.CountryAdapter;
 import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
 import com.techease.speedracerz.networking.APIClient;
 import com.techease.speedracerz.networking.APIServices;

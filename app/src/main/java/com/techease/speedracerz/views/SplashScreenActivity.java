@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.firebase.MyJobService;
 import com.techease.speedracerz.utils.GeneralUtils;
 

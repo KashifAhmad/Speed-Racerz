@@ -9,7 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.techease.speed.R;
+
+import com.techease.speedracerz.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
 import com.techease.speedracerz.views.resetpasswordscreens.ResetPasswordActivity;
 import com.techease.speedracerz.views.resetpasswordscreens.VerifyPasswordCodeActivity;
@@ -47,7 +47,10 @@ public class GeneralUtils {
         return editor;
     }
 
-
+    public static Fragment fragmentChanger(Context context, Fragment fragment, int id) {
+        ((AppCompatActivity) context).getSupportFragmentManager().beginTransaction().replace(id, fragment).commit();
+        return fragment;
+    }
 
     public static SharedPreferences getSharedPreferences(Context context) {
         return context.getSharedPreferences(Configuation.MY_PREF, 0);

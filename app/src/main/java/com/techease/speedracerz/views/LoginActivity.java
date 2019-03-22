@@ -19,7 +19,7 @@ import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
-import com.techease.speed.R;
+import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
 import com.techease.speedracerz.networking.APIClient;
 import com.techease.speedracerz.networking.APIServices;

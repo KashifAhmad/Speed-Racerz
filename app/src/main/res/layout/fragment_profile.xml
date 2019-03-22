@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/events_bg_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:background="@mipmap/car_img1"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="140sp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                android:src="@drawable/edit_photo" />
+
+
+            <TextView
+                android:id="@+id/tv_edit_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="30sp"
+                android:text="Edit Photo"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="130sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="210sp"
+            android:layout_marginRight="10sp"
+            android:background="@drawable/round_events_bg">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50sp"
+                android:text="Jamees Routes"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10sp"
+                android:drawableLeft="@drawable/navigation"
+                android:text=" London, UK" />
+
+
+            <ImageView
+                android:id="@+id/iv_edit_profile"
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30sp"
+                android:layout_marginRight="20sp"
+                android:src="@drawable/edit_icon" />
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_edit_name"
+            android:layout_marginBottom="60dp">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10sp"
+                        android:background="@drawable/round_corner_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15sp"
+                        android:text="Notification"
+                        android:textColor="@color/profile_button_text_color"
+                        android:textSize="@dimen/profile_textview_text_size"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:background="@drawable/round_corner_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15sp"
+                        android:text="Location"
+                        android:textColor="@color/profile_button_text_color"
+                        android:textSize="@dimen/profile_textview_text_size"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:background="@drawable/round_corner_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15sp"
+                        android:text="My Tickets"
+                        android:textColor="@color/profile_button_text_color"
+                        android:textSize="@dimen/profile_textview_text_size"
+                        android:textStyle="bold" />
+
+
+                    <Button
+                        android:id="@+id/btn_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:background="@drawable/round_corner_gray"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="15sp"
+                        android:text="Logout"
+                        android:textColor="@color/profile_button_text_color"
+                        android:textSize="@dimen/profile_textview_text_size"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </TableLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="15sp"
+        android:text="Profile"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15sp"
+        android:layout_marginRight="15sp"
+        android:src="@drawable/notification" />
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/round_navigation_bg"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation" />
+
+
+</RelativeLayout>
