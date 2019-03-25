@@ -30,7 +30,7 @@
         <activity android:name=".views.QuantityEventsActivity" />
         <activity android:name=".views.BookingEventsActivity" />
         <activity android:name=".views.MyTicketsActivity" />
-        <activity android:name=".views.AboutEventsActivity" />
+        <activity android:name=".views.EventDetailActivity" />
         <activity android:name=".views.BottomNavActivity" />
         <activity android:name=".views.AllDoneWelcomeActivity" />
         <activity android:name=".views.NotificationAccessActivity" />

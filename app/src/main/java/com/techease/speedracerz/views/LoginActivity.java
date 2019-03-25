@@ -226,6 +226,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     SharedPrefUtils.getEditor(LoginActivity.this).putString("name", response.body().getData().getUser().getName()).commit();
                     SharedPrefUtils.getEditor(LoginActivity.this).putString("auth_token", strToken).commit();
                     SharedPrefUtils.getEditor(LoginActivity.this).putString("email", strLoginUsername).commit();
+                    SharedPrefUtils.getEditor(LoginActivity.this).putString("address", response.body().getData().getUser().getAddress()).commit();
                     Intent intent = new Intent(LoginActivity.this, BottomNavActivity.class);
 //                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_SINGLE_TOP);
                     startActivity(intent);

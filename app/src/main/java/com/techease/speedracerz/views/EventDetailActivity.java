@@ -12,7 +12,6 @@ import com.squareup.picasso.Picasso;
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.eventDetailModels.EventDetailsResponseModel;
 import com.techease.speedracerz.networking.BaseNetworking;
-import com.techease.speedracerz.utils.GeneralUtils;
 import com.techease.speedracerz.utils.SharedPrefUtils;
 
 import butterknife.BindView;
@@ -21,7 +20,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class AboutEventsActivity extends AppCompatActivity implements View.OnClickListener {
+public class EventDetailActivity extends AppCompatActivity implements View.OnClickListener {
 
 
 
@@ -46,7 +45,7 @@ public class AboutEventsActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_events);
+        setContentView(R.layout.activity_event_detail);
         initUI();
 
     }
@@ -70,7 +69,7 @@ public class AboutEventsActivity extends AppCompatActivity implements View.OnCli
                     tvEventTitle.setText(response.body().getData().getTitle());
                     tvDescription.setText(response.body().getData().getDescription());
 //                    tvLocation.setText(response.body().getData().getTickets().getRacers().get(0).getCity());
-                    tvUsername.setText(SharedPrefUtils.getSharedPref(AboutEventsActivity.this).getString("name","" ));
+                    tvUsername.setText(SharedPrefUtils.getSharedPref(EventDetailActivity.this).getString("name","" ));
                     Picasso.get().load(response.body().getData().getImage()).into(ivEventImage);
 
                 }

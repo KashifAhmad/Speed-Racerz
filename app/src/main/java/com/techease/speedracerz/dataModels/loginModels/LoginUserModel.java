@@ -34,7 +34,7 @@ public class LoginUserModel {
     private Object profilePicture;
     @SerializedName("address")
     @Expose
-    private Object address;
+    private String address;
     @SerializedName("accountActivationStatus")
     @Expose
     private String accountActivationStatus;
@@ -144,11 +144,11 @@ public class LoginUserModel {
         this.profilePicture = profilePicture;
     }
 
-    public Object getAddress() {
+    public String getAddress() {
         return address;
     }
 
-    public void setAddress(Object address) {
+    public void setAddress(String address) {
         this.address = address;
     }
 

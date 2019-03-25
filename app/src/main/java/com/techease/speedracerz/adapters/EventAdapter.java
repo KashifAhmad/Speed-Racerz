@@ -14,11 +14,9 @@ import com.squareup.picasso.Picasso;
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.eventsDataModels.EventDataModel;
 import com.techease.speedracerz.utils.SharedPrefUtils;
-import com.techease.speedracerz.views.AboutEventsActivity;
+import com.techease.speedracerz.views.EventDetailActivity;
 
 import java.util.ArrayList;
-
-import javax.xml.transform.Templates;
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder> {
     ArrayList<EventDataModel> eventDataModelArrayList;
@@ -50,7 +48,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
             @Override
             public void onClick(View v) {
                 SharedPrefUtils.getEditor(context).putInt("event_id", eventDataModel.getId()).commit();
-                context.startActivity(new Intent(context, AboutEventsActivity.class));
+                context.startActivity(new Intent(context, EventDetailActivity.class));
 
             }
         });
