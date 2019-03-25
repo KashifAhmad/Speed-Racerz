@@ -147,9 +147,9 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
                     }
                 });
 
-            GPSTracker gpsTracker = new GPSTracker(this);
-            lat = String.valueOf(gpsTracker.getLatitude());
-            lon = String.valueOf(gpsTracker.getLongitude());
+        GPSTracker gpsTracker = new GPSTracker(this);
+        lat = String.valueOf(gpsTracker.getLatitude());
+        lon = String.valueOf(gpsTracker.getLongitude());
 
     }
 
@@ -266,6 +266,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
             public void onResponse(Call<SignupResponseModel> call, Response<SignupResponseModel> response) {
                 if (response.isSuccessful()) {
                     startActivity(new Intent(RacerRegistrationActivity.this, LocationAccessActivity.class));
+                    SharedPrefUtils.getEditor(RacerRegistrationActivity.this).putString("address", address).commit();
                 } else {
                     Toast.makeText(RacerRegistrationActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
                 }
@@ -311,7 +312,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         } else {
             tilPassword.setError(null);
         }
-        if (userType.equals("")){
+        if (userType.equals("")) {
             Toast.makeText(this, "Please select a user type", Toast.LENGTH_SHORT).show();
             valid = false;
         }

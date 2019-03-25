@@ -210,6 +210,7 @@
                             android:layout_marginTop="10sp"
                             android:imeOptions="actionNext"
                             android:singleLine="true"
+                            android:inputType="text"
                             android:background="@drawable/round_corner_payment_et"
                             android:gravity="center_vertical"
                             android:paddingLeft="20sp" />
@@ -230,6 +231,7 @@
                             android:layout_marginTop="10sp"
                             android:imeOptions="actionNext"
                             android:singleLine="true"
+                            android:inputType="phone"
                             android:background="@drawable/round_corner_payment_et"
                             android:gravity="center_vertical"
                             android:paddingLeft="20sp" />
@@ -262,6 +264,7 @@
                             android:hint="Zip Code"
                             android:imeOptions="actionDone"
                             android:singleLine="true"
+                            android:inputType="number"
                             android:paddingLeft="20sp" />
                     </android.support.design.widget.TextInputLayout>
 

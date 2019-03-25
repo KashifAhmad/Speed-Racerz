@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -243,6 +242,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_edit_email"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -257,6 +257,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
@@ -280,6 +281,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_edit_booked_by"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -294,6 +296,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_booked_by"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
@@ -301,6 +304,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_address"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
@@ -308,6 +312,7 @@
 
 
                 <TextView
+                    android:id="@+id/tv_phone_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10sp"
@@ -331,6 +336,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_edit_card"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -358,6 +364,7 @@
 
 
                     <TextView
+                        android:id="@+id/tv_card_expiry"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10sp"
@@ -402,6 +409,7 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/tv_sub_total"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -426,6 +434,7 @@
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/tv_discount"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -446,10 +455,11 @@
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Texes"
+                        android:text="Tax"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:id="@+id/tv_tax"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -476,6 +486,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/tv_grand_total"
                         android:layout_width="0sp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"

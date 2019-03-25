@@ -16,41 +16,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.techease.speedracerz.views.resetpasswordscreens.VerifyPasswordCodeActivity" />
-        <activity android:name="com.techease.speedracerz.views.resetpasswordscreens.ResetPasswordActivity" />
-        <activity android:name="com.techease.speedracerz.views.SplashScreenActivity">
+        <activity android:name=".views.CardPaymentActivity"></activity>
+        <activity android:name=".views.resetpasswordscreens.VerifyPasswordCodeActivity" />
+        <activity android:name=".views.resetpasswordscreens.ResetPasswordActivity" />
+        <activity android:name=".views.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.techease.speedracerz.views.ReviewEventsActivity" />
-        <activity android:name="com.techease.speedracerz.views.PaymentEventsActivity" />
-        <activity android:name="com.techease.speedracerz.views.BookingEventsActivity" />
-        <activity android:name="com.techease.speedracerz.views.MyTicketsActivity" />
-        <activity android:name="com.techease.speedracerz.views.AboutEventsActivity" />
-        <activity android:name="com.techease.speedracerz.views.BottomNavActivity" />
-        <activity android:name="com.techease.speedracerz.views.AllDoneWelcomeActivity" />
-        <activity android:name="com.techease.speedracerz.views.NotificationAccessActivity" />
-        <activity android:name="com.techease.speedracerz.views.LocationAccessActivity" />
-        <activity android:name="com.techease.speedracerz.views.LogInChoiceActivity" />
-        <activity android:name="com.techease.speedracerz.views.RacerRegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.views.UserRegistrationActivity" />
-        <activity android:name="com.techease.speedracerz.views.LoginActivity" />
-        <activity android:name="com.techease.speedracerz.views.RegistrationActivity" />
+        <activity android:name=".views.ReviewEventsActivity" />
+        <activity android:name=".views.QuantityEventsActivity" />
+        <activity android:name=".views.BookingEventsActivity" />
+        <activity android:name=".views.MyTicketsActivity" />
+        <activity android:name=".views.AboutEventsActivity" />
+        <activity android:name=".views.BottomNavActivity" />
+        <activity android:name=".views.AllDoneWelcomeActivity" />
+        <activity android:name=".views.NotificationAccessActivity" />
+        <activity android:name=".views.LocationAccessActivity" />
+        <activity android:name=".views.LogInChoiceActivity" />
+        <activity android:name=".views.RacerRegistrationActivity" />
+        <activity android:name=".views.UserRegistrationActivity" />
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.RegistrationActivity" />
 
-        <service android:name="com.techease.speedracerz.firebase.MyFirebaseInstanceIdService">
+        <service android:name=".firebase.MyFirebaseInstanceIdService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.techease.speedracerz.firebase.MyFirebaseMessagingService">
+        <service android:name=".firebase.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.techease.speedracerz.firebase.MyJobService" />
+        <service android:name=".firebase.MyJobService" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
