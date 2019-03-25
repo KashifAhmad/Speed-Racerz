@@ -213,6 +213,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20sp"
+                    android:inputType="number"
                     android:layout_toRightOf="@id/iv_cc_placeholder"
                     android:background="@android:color/transparent"
                     android:gravity="center_vertical"
@@ -253,6 +254,7 @@
                     android:layout_width="0sp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:inputType="date"
                     android:background="@drawable/round_corner_payment_et"
                     android:gravity="center_vertical"
                     android:hint="MM/YY"
@@ -266,6 +268,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_corner_payment_et"
                     android:hint="123"
+                    android:inputType="number"
                     android:paddingLeft="15sp" />
             </LinearLayout>
         </LinearLayout>

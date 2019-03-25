@@ -65,7 +65,7 @@ public class CardPaymentActivity extends AppCompatActivity implements View.OnCli
                     startActivity(new Intent(this, ReviewEventsActivity.class));
                     SharedPrefUtils.getEditor(this).putString("cardNumber", cardNumber).commit();
                     SharedPrefUtils.getEditor(this).putString("cardExpiry", cardExpiry).commit();
-                    SharedPrefUtils.getEditor(this).putString("cardCVV", cardCVV).commit();
+                    SharedPrefUtils.getEditor(this).putString("cvv", cardCVV).commit();
                 }
         }
     }

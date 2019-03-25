@@ -1,12 +1,14 @@
 package com.techease.speedracerz.networking;
 
 
+import com.techease.speedracerz.dataModels.GenericResponseModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.ChangePasswordModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.ResetPasswordResponeModel;
 import com.techease.speedracerz.dataModels.changePasswordModels.verifycodemodel.VerifyCodeResponseModel;
 import com.techease.speedracerz.dataModels.eventDetailModels.EventDetailsResponseModel;
 import com.techease.speedracerz.dataModels.eventsDataModels.EventResponseModel;
 import com.techease.speedracerz.dataModels.loginModels.LoginResponse;
+import com.techease.speedracerz.dataModels.myTicketsModel.MyTicketsResponseModel;
 import com.techease.speedracerz.dataModels.profileDataModel.ProfileResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.SignupResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesResponseModel;
@@ -78,6 +80,24 @@ public interface APIServices {
 
     @GET("get-event-detail")
     Call<EventDetailsResponseModel> getEventDetails(@Query("eventId") int id);
+
+    @FormUrlEncoded
+    @POST("book-ticket")
+    Call<GenericResponseModel> bookTicket(@Field("eventId") int eventID,
+                                          @Field("name") String name,
+                                          @Field("email") String email,
+                                          @Field("phone") String phoneNumber,
+                                          @Field("address") String address,
+                                          @Field("cardNo") String cardNo,
+                                          @Field("expiry") String expiry,
+                                          @Field("csv") String cvv,
+                                          @Field("quantity") String quantity,
+                                          @Field("price") String price,
+                                          @Field("discount") String discount,
+                                          @Field("tax") String tax,
+                                          @Field("total") String total);
+    @GET("my-tickets")
+    Call<MyTicketsResponseModel> myTickets();
 
 
 }
