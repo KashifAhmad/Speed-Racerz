@@ -6,30 +6,26 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="zma" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc191472-ee2e-4c1d-810c-9f5824c500ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/MyTicketsAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/GenericResponseModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/myTicketsModel/MyTicketsData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/myTicketsModel/MyTicketsResponseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/networking/APIServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/networking/APIServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/CardPaymentActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/CardPaymentActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ReviewEventsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ReviewEventsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/ComingSoonFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/ComingSoonFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_card_payment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_card_payment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_tickets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_tickets.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_my_tickets_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_my_tickets_layout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,55 +80,56 @@
     <session id="-2119614791">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="24" />
+          <entry key="project.open.time.0" value="4" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
-          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.2" value="5" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.44" value="2" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.69" value="1" />
           <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.71" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="57" />
           <entry key="gradle" value="57" />
-          <entry key="java" value="8620" />
-          <entry key="txt" value="326" />
-          <entry key="xml" value="1717" />
+          <entry key="java" value="8938" />
+          <entry key="txt" value="371" />
+          <entry key="xml" value="1756" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="57" />
-          <entry key="JAVA" value="8620" />
-          <entry key="PLAIN_TEXT" value="383" />
-          <entry key="XML" value="1717" />
+          <entry key="JAVA" value="8938" />
+          <entry key="PLAIN_TEXT" value="428" />
+          <entry key="XML" value="1756" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="6" />
-          <entry key="java" value="182" />
-          <entry key="png" value="5" />
-          <entry key="xml" value="58" />
+          <entry key="gradle" value="9" />
+          <entry key="java" value="208" />
+          <entry key="png" value="7" />
+          <entry key="xml" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="6" />
-          <entry key="Image" value="5" />
-          <entry key="JAVA" value="182" />
-          <entry key="XML" value="58" />
+          <entry key="Groovy" value="9" />
+          <entry key="Image" value="7" />
+          <entry key="JAVA" value="208" />
+          <entry key="XML" value="74" />
         </counts>
       </usages-collector>
     </session>
@@ -232,108 +229,104 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/networking/APIServices.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ReviewEventsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="133" column="79" selection-start-line="133" selection-start-column="79" selection-end-line="133" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="27" column="75" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="89" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BottomNavActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="27" column="82" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="95" />
+            <state relative-caret-position="270">
+              <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/ComingSoonFragment.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/EventFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
+            <state relative-caret-position="198">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_tickets.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="234">
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
             </state>
           </provider>
-          <provider editor-type-id="android-designer2" />
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/EventAdapter.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="936">
-              <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1830#2138#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/MyTicketsAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="56" column="23" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="23" />
+            <state relative-caret-position="156">
+              <caret line="75" column="108" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_my_tickets_layout.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
+            <state relative-caret-position="245">
+              <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml">
           <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="299" column="53" selection-start-line="299" selection-start-column="37" selection-end-line="299" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="229" column="77" selection-start-line="229" selection-start-column="77" selection-end-line="229" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="270" column="32" selection-start-line="270" selection-start-column="25" selection-end-line="270" selection-end-column="32" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -362,6 +355,7 @@
       <find>isLogin</find>
       <find>apiCallEvents</find>
       <find>change</find>
+      <find>tvChangedPrice</find>
     </findStrings>
     <replaceStrings>
       <replace>etRegistrationEmailAddress</replace>
@@ -2664,9 +2658,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_coming_soon.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/resetpasswordscreens/ResetPasswordActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/resetpasswordscreens/VerifyPasswordCodeActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/RegistrationActivity.java" />
@@ -2691,18 +2682,14 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_coming_soon.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/ProfileFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/PaymentEventsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_review.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/loginModels/LoginUserModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/GenericResponseModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/CardPaymentActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_card_payment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ReviewEventsActivity.java" />
@@ -2715,6 +2702,13 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/MyTicketsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_my_tickets_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java" />
       </list>
     </option>
   </component>
@@ -2733,8 +2727,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -2758,35 +2750,6 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="speedracerz" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="adapters" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="speedracerz" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="dataModels" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="speedracerz" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="dataModels" type="462c0819:PsiDirectoryNode" />
-              <item name="myTicketsModel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="speedracerz" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="networking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="speedracerz" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2798,7 +2761,14 @@
               <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="mipmap" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="mipmap" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="logo" type="c431d0b8:AndroidResGroupNode" />
             </path>
             <path>
               <item name="Speed-Racerz" type="1abcf292:AndroidViewProjectNode" />
@@ -2824,6 +2794,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2831,7 +2803,7 @@
     <property name="DEBUGGABLE_PROCESS" value="com.techease.speedracerz" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="Spla&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;Event&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/AboutEventsActivity.java&#10;Login&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Reg&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/UserRegistrationActivity.java&#10;Splash&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;GEner&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/GeneralUtils.java&#10;EVe&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/EventActivity.java&#10;Profi&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/ProfileActivity.java&#10;Share&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/SharedPrefUtils.java&#10;FIreb&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/firebase/MyFirebaseInstanceIdService.java&#10;API&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/networking/APIServices.java&#10;Logi&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Log&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Ge&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/GeneralUtils.java&#10;log&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;re&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_registration.xml&#10;r&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java&#10;use&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_user_registration.xml&#10;logi&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;rej&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/RegistrationActivity.java&#10;spl&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;lo&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;pr&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/ProfileActivity.java&#10;even&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/EventActivity.java&#10;my&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_my_tickets.xml&#10;myt&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java&#10;book&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_booking.xml&#10;loc&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LocationAccessActivity.java&#10;Mani&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/AndroidManifest.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Deta&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java&#10;Splash&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;Spla&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;Event&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/AboutEventsActivity.java&#10;Login&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Reg&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/UserRegistrationActivity.java&#10;GEner&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/GeneralUtils.java&#10;EVe&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/EventActivity.java&#10;Profi&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/ProfileActivity.java&#10;Share&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/SharedPrefUtils.java&#10;FIreb&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/firebase/MyFirebaseInstanceIdService.java&#10;API&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/networking/APIServices.java&#10;Logi&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Log&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java&#10;Ge&#9;FILE&#9;file:///Users/eapple/Documents/GitHub/Speed-Racerz/app/src/main/java/com/techease/speedracerz/utils/GeneralUtils.java&#10;log&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;re&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_registration.xml&#10;r&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java&#10;use&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_user_registration.xml&#10;logi&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;rej&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/RegistrationActivity.java&#10;spl&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java&#10;lo&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_login.xml&#10;pr&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/ProfileActivity.java&#10;even&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/EventActivity.java&#10;my&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_my_tickets.xml&#10;myt&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java&#10;book&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/res/layout/activity_booking.xml&#10;loc&#9;FILE&#9;file:///home/attaurrahman/Projects/Speed-Racerz/app/src/main/java/com/techease/speedracerz/views/LocationAccessActivity.java&#10;Mani&#9;FILE&#9;file:///home/kashif/Kashif-Ahmad/Projects/Speed-Racerz/app/src/main/AndroidManifest.xml" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="device.picker.selection" value="18e9b8c40005" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../BtcConverter" />
@@ -3147,7 +3119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553499084775</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="tikcet booking and my tickets list done">
+      <created>1553513203477</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1553513203477</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3179,7 +3158,7 @@
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Fabric" order="5" />
-      <window_info active="true" anchor="right" id="Preview" order="6" visible="true" weight="0.26448497" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.26448497" />
       <window_info anchor="right" id="Assistant" order="7" weight="0.3299356" />
       <window_info anchor="right" id="Hierarchy" order="8" weight="0.3299356" />
     </layout>
@@ -3201,7 +3180,8 @@
     <MESSAGE value="working on booking activity" />
     <MESSAGE value="much has been done on flow for a event registration" />
     <MESSAGE value="book ticket api left," />
-    <option name="LAST_COMMIT_MESSAGE" value="book ticket api left," />
+    <MESSAGE value="tikcet booking and my tickets list done" />
+    <option name="LAST_COMMIT_MESSAGE" value="tikcet booking and my tickets list done" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -3239,15 +3219,20 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java</url>
-          <line>56</line>
+          <line>77</line>
           <properties />
-          <option name="timeStamp" value="13" />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>response.body().getData().getImage()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>SharedPrefUtils.getApiToken(EventActivity.this)</expression-string>
         <language-id>JAVA</language-id>
@@ -3288,50 +3273,9 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>response.body.getData().get(2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CityAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ComingSoonActivity.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LocationAccessActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LogInChoiceActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/NotificationAccessActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CountryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/AllDoneWelcomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -3346,67 +3290,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/utils/AlertUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/utils/GeneralUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
           <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/navigation.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bottom_nav.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="37" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="37" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ProfileActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
           <caret line="201" column="17" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_coming_soon.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_event.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/ProfileFragment.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3416,66 +3347,48 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_events_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_events_racer_layout.xml">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_booked_by_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2250">
           <caret line="125" column="41" selection-start-line="6" selection-start-column="2" selection-end-line="125" selection-end-column="41" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/EventFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="64" column="36" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="188" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_payment_event_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
           <caret line="121" column="8" selection-end-line="144" selection-end-column="17" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_booking_events.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5382">
           <caret line="299" selection-start-line="6" selection-start-column="2" selection-end-line="299" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/UserRegistrationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3485,12 +3398,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_review.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3506,92 +3419,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="146" column="17" selection-start-line="146" selection-start-column="17" selection-end-line="146" selection-end-column="17" />
-          <folding>
-            <element signature="e#3187#3188#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="228" column="135" selection-start-line="228" selection-start-column="135" selection-end-line="228" selection-end-column="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/GenericResponseModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#545#546#0" expanded="true" />
-            <element signature="e#575#576#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#801#802#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="72" column="79" selection-start-line="72" selection-start-column="79" selection-end-line="72" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="243" column="52" selection-start-line="243" selection-start-column="52" selection-end-line="243" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="84" column="58" selection-start-line="84" selection-start-column="58" selection-end-line="84" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3603,48 +3437,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_card_payment.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="215" column="45" selection-start-line="215" selection-start-column="45" selection-end-line="215" selection-end-column="45" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/dataModels/myTicketsModel/MyTicketsData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#717#718#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#995#996#0" expanded="true" />
-            <element signature="e#1055#1056#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1219#1220#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1379#1380#0" expanded="true" />
-            <element signature="e#1423#1424#0" expanded="true" />
-            <element signature="e#1463#1464#0" expanded="true" />
-            <element signature="e#1499#1500#0" expanded="true" />
-            <element signature="e#1557#1558#0" expanded="true" />
-            <element signature="e#1607#1608#0" expanded="true" />
-            <element signature="e#1644#1645#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1729#1730#0" expanded="true" />
-            <element signature="e#1773#1774#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3652,60 +3455,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-268">
           <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#490#491#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#782#783#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#846#847#0" expanded="true" />
-            <element signature="e#873#874#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#946#947#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/networking/APIServices.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="1368">
           <caret line="99" column="45" selection-start-line="99" selection-start-column="45" selection-end-line="99" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/ReviewEventsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
+        <state relative-caret-position="2394">
           <caret line="133" column="79" selection-start-line="133" selection-start-column="79" selection-end-line="133" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/EventAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1830#2138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BottomNavActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="27" column="82" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="95" />
+        <state relative-caret-position="396">
+          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
         </state>
       </provider>
     </entry>
@@ -3717,33 +3487,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_tickets.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
+        <state relative-caret-position="594">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/EventAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="75" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="89" />
+        <state relative-caret-position="936">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/MyTicketsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="42" column="99" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/MyTicketsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="972">
           <caret line="56" column="23" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -3752,12 +3515,131 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_my_tickets_layout.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
+        <state relative-caret-position="2088">
           <caret line="116" column="51" selection-start-line="116" selection-start-column="51" selection-end-line="116" selection-end-column="51" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="55" selection-start-line="34" selection-start-column="3" selection-end-line="43" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/utils/AlertUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="32" column="77" selection-start-line="32" selection-start-column="77" selection-end-line="32" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/alert_box.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/progress_dialog.xml">
       <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/SplashScreenActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="37" selection-start-line="22" selection-start-column="7" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/logo.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/car_img1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_event_detail.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="270" column="32" selection-start-line="270" selection-start-column="25" selection-end-line="270" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/fragments/EventFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BottomNavActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="229" column="77" selection-start-line="229" selection-start-column="77" selection-end-line="229" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_booking.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/BookingEventsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="60" column="60" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/EventDetailActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="75" column="108" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="108" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_quantity.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="299" column="53" selection-start-line="299" selection-start-column="37" selection-end-line="299" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/QuantityEventsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

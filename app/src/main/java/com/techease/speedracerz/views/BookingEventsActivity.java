@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.utils.SharedPrefUtils;
@@ -20,6 +21,8 @@ public class BookingEventsActivity extends AppCompatActivity implements View.OnC
     @BindView(R.id.btn_continue_booking_events)
     Button btnContinueBookingEvents;
 
+    @BindView(R.id.iv_back)
+    ImageView ivBack;
     @BindView(R.id.til_booked_by)
     TextInputLayout tilBooked;
     @BindView(R.id.et_booked_by)
@@ -42,6 +45,7 @@ public class BookingEventsActivity extends AppCompatActivity implements View.OnC
         ButterKnife.bind(this);
 
         btnContinueBookingEvents.setOnClickListener(this);
+        ivBack.setOnClickListener(this);
 
     }
 
@@ -57,6 +61,9 @@ public class BookingEventsActivity extends AppCompatActivity implements View.OnC
                     startActivity(new Intent(this, QuantityEventsActivity.class));
                 }
                 break;
+            case R.id.iv_back:
+                startActivity(new Intent(this, EventDetailActivity.class));
+                finish();
 
 
         }

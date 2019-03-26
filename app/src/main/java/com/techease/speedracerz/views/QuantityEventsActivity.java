@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.utils.SharedPrefUtils;
 
@@ -43,7 +44,7 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
     TextView tvDiscount;
     @BindView(R.id.tv_grand_total)
     TextView tvGrandTotal;
-    int quantity;
+    int quantity, changedAmount;
     private String promoCode;
 
     @Override
@@ -58,6 +59,10 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
         btnContinuePaymentEvents.setOnClickListener(this);
         ivAddQuantity.setOnClickListener(this);
         ivRemoveQuantity.setOnClickListener(this);
+        changedAmount = 120;
+        String raceImageURL = SharedPrefUtils.getSharedPref(this).getString("imageURL", "");
+        Picasso.get().load(raceImageURL).into(ivRaceImage);
+
     }
 
     @Override
@@ -65,7 +70,10 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
         switch (v.getId()) {
             case R.id.iv_add_qty:
                 quantity = quantity + 1;
+
                 tvQuantityCounter.setText("" + quantity);
+
+
                 break;
             case R.id.iv_remove_qty:
                 if (quantity == 1) {
@@ -84,9 +92,9 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
                 SharedPrefUtils.getEditor(this).putString("totalPrice", tvGrandTotal.getText().toString()).commit();
                 startActivity(new Intent(this, CardPaymentActivity.class));
                 break;
-
-
         }
+        changedAmount = changedAmount*quantity;
+        tvChangedPrice.setText(""+changedAmount);
 
     }
 }

@@ -26,6 +26,8 @@ public class EventDetailActivity extends AppCompatActivity implements View.OnCli
 
     @BindView(R.id.btn_join_events)
     Button btnEvent;
+    @BindView(R.id.iv_back)
+            ImageView ivBack;
     int eventID;
     @BindView(R.id.tv_event_title)
     TextView tvEventTitle;
@@ -54,6 +56,7 @@ public class EventDetailActivity extends AppCompatActivity implements View.OnCli
         ButterKnife.bind(this);
         eventID = SharedPrefUtils.getSharedPref(this).getInt("event_id", 0);
         btnEvent.setOnClickListener(this);
+        ivBack.setOnClickListener(this);
         getEventDetails();
 
     }
@@ -71,6 +74,7 @@ public class EventDetailActivity extends AppCompatActivity implements View.OnCli
 //                    tvLocation.setText(response.body().getData().getTickets().getRacers().get(0).getCity());
                     tvUsername.setText(SharedPrefUtils.getSharedPref(EventDetailActivity.this).getString("name","" ));
                     SharedPrefUtils.getEditor(EventDetailActivity.this).putInt("eventID", eventID).commit();
+                    SharedPrefUtils.getEditor(EventDetailActivity.this).putString("imageURL", response.body().getData().getImage()).commit();
                     Picasso.get().load(response.body().getData().getImage()).into(ivEventImage);
 
                 }
@@ -89,6 +93,11 @@ public class EventDetailActivity extends AppCompatActivity implements View.OnCli
         switch (v.getId()) {
             case R.id.btn_join_events:
                 startActivity(new Intent(this, BookingEventsActivity.class));
+                finish();
+                break;
+            case R.id.iv_back:
+                startActivity(new Intent(this, BottomNavActivity.class));
+                finishAffinity();
 
         }
 
