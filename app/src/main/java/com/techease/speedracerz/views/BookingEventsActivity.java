@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.utils.SharedPrefUtils;
@@ -33,6 +34,8 @@ public class BookingEventsActivity extends AppCompatActivity implements View.OnC
     EditText etPhoneNumber;
     @BindView(R.id.til_zip_code)
     TextInputLayout tilZip;
+    @BindView(R.id.tv_price)
+    TextView tvPrice;
     @BindView(R.id.et_zip_code)
     EditText etZipCode;
     private String bookedBy, phoneNumber, zipCode;
@@ -43,7 +46,7 @@ public class BookingEventsActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_booking);
         ButterKnife.bind(this);
-
+        tvPrice.setText(SharedPrefUtils.getSharedPref(this).getString("price", ""));
         btnContinueBookingEvents.setOnClickListener(this);
         ivBack.setOnClickListener(this);
 

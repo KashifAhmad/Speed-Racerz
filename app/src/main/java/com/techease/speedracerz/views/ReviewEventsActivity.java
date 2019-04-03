@@ -94,7 +94,6 @@ public class ReviewEventsActivity extends AppCompatActivity implements View.OnCl
         discount = SharedPrefUtils.getSharedPref(this).getString("discount", "");
         phone = SharedPrefUtils.getSharedPref(this).getString("bookedPhoneNumber", "");
         tax = "1234";
-        discount = "321";
         cardNo = SharedPrefUtils.getSharedPref(this).getString("cardNumber", "");
         cvv = SharedPrefUtils.getSharedPref(this).getString("cvv", "");
         tvBookingQuantity.setText(quantity);
@@ -125,7 +124,7 @@ public class ReviewEventsActivity extends AppCompatActivity implements View.OnCl
 
     private void bookTicket() {
         Call<GenericResponseModel> call = BaseNetworking.apiServices(SharedPrefUtils.getApiToken(this))
-                .bookTicket(eventID, name, email, phone, address, cardNo, expiry, cvv, quantity, price, discount, tax, total);
+                .bookTicket(eventID, name, email, phone, address, "4758411877817150", "05/2019", "1232342342", quantity);
         call.enqueue(new Callback<GenericResponseModel>() {
             @Override
             public void onResponse(Call<GenericResponseModel> call, Response<GenericResponseModel> response) {
@@ -133,7 +132,15 @@ public class ReviewEventsActivity extends AppCompatActivity implements View.OnCl
                     Toast.makeText(ReviewEventsActivity.this, response.body().getMessage(), Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(ReviewEventsActivity.this, MyTicketsActivity.class));
                 }else {
-                    Toast.makeText(ReviewEventsActivity.this, "You have already booked ticket for this event", Toast.LENGTH_SHORT).show();
+                    try {
+                        JSONObject jObjError = new JSONObject(response.errorBody().string());
+                        String error = jObjError.getString("message");
+                        Toast.makeText(ReviewEventsActivity.this, error, Toast.LENGTH_SHORT).show();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
 

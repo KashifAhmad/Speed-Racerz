@@ -44,6 +44,18 @@ public class EventDataModel {
     @Expose
     private Object longitude;
 
+    public String getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(String discount) {
+        this.discount = discount;
+    }
+
+    @SerializedName("discount")
+    @Expose
+    private String discount;
+
     public Integer getId() {
         return id;
     }

@@ -44,7 +44,7 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
     TextView tvDiscount;
     @BindView(R.id.tv_grand_total)
     TextView tvGrandTotal;
-    int quantity, changedAmount;
+    double quantity, changedAmount, discount;
     private String promoCode;
 
     @Override
@@ -59,7 +59,11 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
         btnContinuePaymentEvents.setOnClickListener(this);
         ivAddQuantity.setOnClickListener(this);
         ivRemoveQuantity.setOnClickListener(this);
-        changedAmount = 120;
+        changedAmount = Double.parseDouble(SharedPrefUtils.getSharedPref(this).getString("price", ""));
+        discount = Double.parseDouble(SharedPrefUtils.getSharedPref(this).getString("discount", ""));
+        tvChangedPrice.setText(""+changedAmount);
+        tvDiscount.setText(""+discount);
+
         String raceImageURL = SharedPrefUtils.getSharedPref(this).getString("imageURL", "");
         Picasso.get().load(raceImageURL).into(ivRaceImage);
 

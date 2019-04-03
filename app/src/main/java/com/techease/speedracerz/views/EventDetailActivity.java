@@ -71,10 +71,15 @@ public class EventDetailActivity extends AppCompatActivity implements View.OnCli
                     tvEventType.setText(response.body().getData().getCategory());
                     tvEventTitle.setText(response.body().getData().getTitle());
                     tvDescription.setText(response.body().getData().getDescription());
+
 //                    tvLocation.setText(response.body().getData().getTickets().getRacers().get(0).getCity());
                     tvUsername.setText(SharedPrefUtils.getSharedPref(EventDetailActivity.this).getString("name","" ));
                     SharedPrefUtils.getEditor(EventDetailActivity.this).putInt("eventID", eventID).commit();
                     SharedPrefUtils.getEditor(EventDetailActivity.this).putString("imageURL", response.body().getData().getImage()).commit();
+                    SharedPrefUtils.getEditor(EventDetailActivity.this).putString("price", response.body().getData().getTicket()).commit();
+                    SharedPrefUtils.getEditor(EventDetailActivity.this).putString("discount", response.body().getData().getDiscount()).commit();
+
+
                     Picasso.get().load(response.body().getData().getImage()).into(ivEventImage);
 
                 }

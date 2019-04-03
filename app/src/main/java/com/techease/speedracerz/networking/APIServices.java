@@ -91,11 +91,7 @@ public interface APIServices {
                                           @Field("cardNo") String cardNo,
                                           @Field("expiry") String expiry,
                                           @Field("csv") String cvv,
-                                          @Field("quantity") String quantity,
-                                          @Field("price") String price,
-                                          @Field("discount") String discount,
-                                          @Field("tax") String tax,
-                                          @Field("total") String total);
+                                          @Field("quantity") String quantity);
     @GET("my-tickets")
     Call<MyTicketsResponseModel> myTickets();
 
