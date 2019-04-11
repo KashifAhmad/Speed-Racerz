@@ -37,6 +37,19 @@ public class EventDataModel {
     @SerializedName("updated_at")
     @Expose
     private String updatedAt;
+
+    public String getEventType() {
+        return eventType;
+    }
+
+    public void setEventType(String eventType) {
+        this.eventType = eventType;
+    }
+
+    @SerializedName("eventType")
+    @Expose
+    private String eventType;
+
     @SerializedName("latitute")
     @Expose
     private Object latitute;

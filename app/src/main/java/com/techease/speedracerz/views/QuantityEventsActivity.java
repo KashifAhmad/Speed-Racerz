@@ -94,7 +94,12 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
                 }
                 SharedPrefUtils.getEditor(this).putString("changedPrice", tvChangedPrice.getText().toString()).commit();
                 SharedPrefUtils.getEditor(this).putString("totalPrice", tvGrandTotal.getText().toString()).commit();
-                startActivity(new Intent(this, CardPaymentActivity.class));
+                String eventType = SharedPrefUtils.getSharedPref(this).getString("event_type", "");
+                if (eventType.equals("free")){
+                    startActivity(new Intent(this, ReviewEventsActivity.class));
+                }else {
+                    startActivity(new Intent(this, CardPaymentActivity.class));
+                }
                 break;
         }
         changedAmount = changedAmount*quantity;

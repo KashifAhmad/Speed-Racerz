@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/hint_text_color</item>
+        <item name="android:fontFamily">@string/font_family_condensed</item>
 
         <!-- reference our hint & error styles -->
       <!--  <item name="hintTextAppearance">@style/HintText</item>

@@ -36,7 +36,7 @@ public class VerifyPasswordCodeActivity extends AppCompatActivity {
     Button btnVerifyCode;
     @BindView(R.id.et_new_password)
     EditText etNewPassword;
-    @BindView(R.id.et_conifrm_new_password)
+    @BindView(R.id.et_confirm_password)
     EditText etConfirmNewPassword;
     @BindView(R.id.btn_new_password)
     Button btnSetNewPassword;

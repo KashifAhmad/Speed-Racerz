@@ -48,6 +48,7 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.MyViewHolder
             @Override
             public void onClick(View v) {
                 SharedPrefUtils.getEditor(context).putInt("event_id", eventDataModel.getId()).commit();
+                SharedPrefUtils.getEditor(context).putString("event_type", eventDataModel.getEventType()).commit();
                 context.startActivity(new Intent(context, EventDetailActivity.class));
 
             }

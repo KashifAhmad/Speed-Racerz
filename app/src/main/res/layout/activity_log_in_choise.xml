@@ -52,7 +52,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="40sp"
                     android:layout_marginBottom="30sp"
-                    android:text="Log In"
+                    android:text="Login"
                     android:textColor="@color/login_choice_text_color"
                     android:textSize="@dimen/login_choice_text_size"
                     android:textStyle="bold" />
