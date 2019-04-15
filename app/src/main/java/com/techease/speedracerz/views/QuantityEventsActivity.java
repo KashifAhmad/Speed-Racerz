@@ -3,6 +3,7 @@ package com.techease.speedracerz.views;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,7 +45,7 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
     TextView tvDiscount;
     @BindView(R.id.tv_grand_total)
     TextView tvGrandTotal;
-    double quantity, changedAmount, discount;
+    double quantity = 1, changedAmount, discount;
     private String promoCode;
 
     @Override
@@ -61,8 +62,9 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
         ivRemoveQuantity.setOnClickListener(this);
         changedAmount = Double.parseDouble(SharedPrefUtils.getSharedPref(this).getString("price", ""));
         discount = Double.parseDouble(SharedPrefUtils.getSharedPref(this).getString("discount", ""));
-        tvChangedPrice.setText(""+changedAmount);
-        tvDiscount.setText(""+discount);
+
+        tvChangedPrice.setText("$ " + changedAmount);
+        tvDiscount.setText("$ " + discount);
 
         String raceImageURL = SharedPrefUtils.getSharedPref(this).getString("imageURL", "");
         Picasso.get().load(raceImageURL).into(ivRaceImage);
@@ -77,7 +79,8 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
 
                 tvQuantityCounter.setText("" + quantity);
 
-
+                tvChangedPrice.setText("" +changedAmount*quantity);
+                Log.d("zma amount", "change amount: "+changedAmount+" quantity: "+quantity);
                 break;
             case R.id.iv_remove_qty:
                 if (quantity == 1) {
@@ -85,6 +88,7 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
                 } else
                     quantity = quantity - 1;
                 tvQuantityCounter.setText("" + quantity);
+                tvChangedPrice.setText("" + changedAmount * quantity);
                 break;
             case R.id.btn_continue_payment_events:
                 SharedPrefUtils.getEditor(this).putString("quantity", String.valueOf(quantity)).commit();
@@ -95,15 +99,12 @@ public class QuantityEventsActivity extends AppCompatActivity implements View.On
                 SharedPrefUtils.getEditor(this).putString("changedPrice", tvChangedPrice.getText().toString()).commit();
                 SharedPrefUtils.getEditor(this).putString("totalPrice", tvGrandTotal.getText().toString()).commit();
                 String eventType = SharedPrefUtils.getSharedPref(this).getString("event_type", "");
-                if (eventType.equals("free")){
+                if (eventType.equals("free")) {
                     startActivity(new Intent(this, ReviewEventsActivity.class));
-                }else {
+                } else {
                     startActivity(new Intent(this, CardPaymentActivity.class));
                 }
                 break;
         }
-        changedAmount = changedAmount*quantity;
-        tvChangedPrice.setText(""+changedAmount);
-
     }
 }

@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -58,6 +60,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     TextView tvForgetPassword;
     @BindView(R.id.tv_new_here_register)
     TextView tvNewHereRegister;
+    @BindView(R.id.rb_remember_me)
+    RadioButton rbRememberMe;
 
 
     @BindView(R.id.iv_login_facebook)
@@ -76,6 +80,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
         setContentView(R.layout.activity_login);
 
         initUI();
@@ -221,7 +226,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
                 } else if (response.body().getStatus()) {
                     strToken = response.body().getData().getUser().getToken();
-                    GeneralUtils.putBooleanValueInEditor(LoginActivity.this, "isLogin", true);
+                    if (rbRememberMe.isChecked()) {
+                        GeneralUtils.putBooleanValueInEditor(LoginActivity.this, "isLogin", true);
+                    }
                     GeneralUtils.putStringValueInEditor(LoginActivity.this, "api_token", strToken);
                     SharedPrefUtils.getEditor(LoginActivity.this).putString("name", response.body().getData().getUser().getName()).commit();
                     SharedPrefUtils.getEditor(LoginActivity.this).putString("auth_token", strToken).commit();

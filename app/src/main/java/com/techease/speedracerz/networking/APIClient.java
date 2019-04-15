@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
     APIClient context = this;
-    public static final String BASE_URL = "http://api.divergense.com/speedracer/api/";
+    public static final String BASE_URL = "https://speedracerz.com/api/api/";
     private static Retrofit retrofit = null;
 
 
