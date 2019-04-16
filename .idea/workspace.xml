@@ -12,22 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc191472-ee2e-4c1d-810c-9f5824c500ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/interfaces/OnCityItemClicked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CityAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CityAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CountryAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/adapters/CountryAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/interfaces/OnCountryItemClicked.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/interfaces/OnCountryItemClicked.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/LoginActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/techease/speedracerz/views/RacerRegistrationActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_racer_registration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_racer_registration.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +72,7 @@
     <session id="-2119614791">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="39" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.103" value="1" />
@@ -113,7 +103,7 @@
           <entry key="dummy" value="57" />
           <entry key="gradle" value="100" />
           <entry key="java" value="9855" />
-          <entry key="txt" value="505" />
+          <entry key="txt" value="540" />
           <entry key="xml" value="2267" />
         </counts>
       </usages-collector>
@@ -121,7 +111,7 @@
         <counts>
           <entry key="Groovy" value="100" />
           <entry key="JAVA" value="9855" />
-          <entry key="PLAIN_TEXT" value="562" />
+          <entry key="PLAIN_TEXT" value="597" />
           <entry key="XML" value="2267" />
         </counts>
       </usages-collector>
@@ -3172,7 +3162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555332957685</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="second version uploaded">
+      <created>1555394122167</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1555394122167</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -3230,7 +3227,8 @@
     <MESSAGE value="SOME CHANGES MADE IN BOOK EVENT API" />
     <MESSAGE value="some changes made in design and buld sent" />
     <MESSAGE value="first release build uploaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="first release build uploaded" />
+    <MESSAGE value="second version uploaded" />
+    <option name="LAST_COMMIT_MESSAGE" value="second version uploaded" />
     <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
   <component name="XDebuggerManager">
