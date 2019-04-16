@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.techease.speedracerz.R;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesDataModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryDataModel;
+import com.techease.speedracerz.interfaces.OnCityItemClicked;
 
 import java.util.List;
 
@@ -18,9 +19,11 @@ public class CityAdapter extends BaseAdapter {
     Context context;
     List<CitiesDataModel> citiesList;
     LayoutInflater inflater;
-    public CityAdapter(Context context, List<CitiesDataModel> list){
+    OnCityItemClicked onCityItemClicked;
+    public CityAdapter(Context context, List<CitiesDataModel> list, OnCityItemClicked onCityItemClicked){
         this.context = context;
         this.citiesList = list;
+        this.onCityItemClicked = onCityItemClicked;
         inflater = LayoutInflater.from(context);
 
     }
@@ -36,6 +39,7 @@ public class CityAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
+        onCityItemClicked.onCitySelected(citiesList.get(position).getName());
         return 0;
     }
 

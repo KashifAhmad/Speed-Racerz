@@ -6,6 +6,7 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -29,6 +30,7 @@ import com.techease.speedracerz.dataModels.signupModels.cities.CitiesDataModel;
 import com.techease.speedracerz.dataModels.signupModels.cities.CitiesResponseModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryDataModel;
 import com.techease.speedracerz.dataModels.signupModels.country.CountryResponseModel;
+import com.techease.speedracerz.interfaces.OnCityItemClicked;
 import com.techease.speedracerz.interfaces.OnCountryItemClicked;
 import com.techease.speedracerz.networking.BaseNetworking;
 import com.techease.speedracerz.utils.Connectivity;
@@ -46,7 +48,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class RacerRegistrationActivity extends AppCompatActivity implements View.OnClickListener, OnCountryItemClicked {
+public class RacerRegistrationActivity extends AppCompatActivity implements View.OnClickListener, OnCountryItemClicked, OnCityItemClicked {
 
     @BindView(R.id.btn_racer_register)
     Button btnRacerRegister;
@@ -78,10 +80,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
     EditText etCountry;
     @BindView(R.id.til_racer_country)
     TextInputLayout tilCountry;
-    @BindView(R.id.et_racer_city)
-    EditText etCity;
-    @BindView(R.id.til_racer_city)
-    TextInputLayout tillCity;
+
 
     @BindView(R.id.et_racer_company)
     EditText etCompany;
@@ -124,7 +123,7 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         rlRacer.setOnClickListener(this);
         rlUser.setOnClickListener(this);
         cityList = new ArrayList<>();
-        cityAdapter = new CityAdapter(this, cityList);
+        cityAdapter = new CityAdapter(this, cityList, this);
         citySpinner.setAdapter(cityAdapter);
         btnRacerRegister.setOnClickListener(this);
         tvAlreadyMemberLogin.setOnClickListener(this);
@@ -285,10 +284,9 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
         strUsername = etUsername.getText().toString();
         strEmail = etEmailAddress.getText().toString();
         strPassword = etPassword.getText().toString();
-//        strCountry = etCountry.getText().toString();
-        strCity = etCity.getText().toString();
+//        strCountry = countrySpinner.getSelectedItem().toString();
+//        strCity = citySpinner.getSelectedItem().toString();
         strCompany = etCompany.getText().toString();
-        strCity = etCity.getText().toString();
         strCompany = etCompany.getText().toString();
         address = etAddress.getText().toString();
 
@@ -316,12 +314,6 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
             Toast.makeText(this, "Please select a user type", Toast.LENGTH_SHORT).show();
             valid = false;
         }
-        if (strCity.isEmpty() || strCity.length() < 3) {
-            tillCity.setError("enter a city");
-            valid = false;
-        } else {
-            tillCity.setError(null);
-        }
         if (address.isEmpty() || address.length() < 3) {
             tilAddress.setError("enter valid address");
             valid = false;
@@ -341,9 +333,13 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 
     @Override
     public void onCountryClick(int id) {
-//        Toast.makeText(this, String.valueOf(id), Toast.LENGTH_SHORT).show();
-//       getCities(id);
+        getCities(id);
+    }
 
+    @Override
+    public void onCountrySelected(String name) {
+        strCountry = name;
+        Log.d("zma country name", name);
     }
 
     private void getCities(int id) {
@@ -362,5 +358,11 @@ public class RacerRegistrationActivity extends AppCompatActivity implements View
 
             }
         });
+    }
+
+    @Override
+    public void onCitySelected(String name) {
+        strCity = name;
+        Log.d("zma city", name);
     }
 }

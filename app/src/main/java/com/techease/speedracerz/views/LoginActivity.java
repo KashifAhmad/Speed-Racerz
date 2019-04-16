@@ -124,7 +124,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             case R.id.tv_new_here_register:
 
                 finish();
-                startActivity(new Intent(this, RegistrationActivity.class));
+                startActivity(new Intent(this, RacerRegistrationActivity.class));
                 break;
 
 

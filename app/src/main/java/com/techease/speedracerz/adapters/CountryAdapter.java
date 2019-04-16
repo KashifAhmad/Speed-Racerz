@@ -45,7 +45,8 @@ public class CountryAdapter extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-//        onItemCallBack.onCountryClick(position);
+        onItemCallBack.onCountryClick(position);
+        onItemCallBack.onCountrySelected(countryList.get(position).getName());
         return countryList.get(position).getId();
     }
 
